@@ -94,14 +94,87 @@
 
   "products": {
     "title": "Alimento que nutre, compromisso que transforma.",
+
     "cta": "Saiba mais",
     "items": [
-      { "slug": "caes-adultos-porte-pequeno", "title": "Cães Adultos Porte Pequeno", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/1.avif" },
-      { "slug": "caes-adultos-porte-medio-grande", "title": "Cães Adultos Porte Médio e Grande", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/2.avif" },
-      { "slug": "caes-adultos-todos-portes", "title": "Cães Adultos Todos os Portes", "flavor": "Carne e Frango", "weights": "2,5kg e 15kg", "image": "/produtos/3.avif" },
-      { "slug": "caes-filhotes-todos-portes", "title": "Cães Filhotes Todos os Portes", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/4.avif" },
-      { "slug": "gatos-adultos", "title": "Gatos Adultos", "flavor": "Frango e Arroz", "weights": "2,5kg e 10,1kg", "image": "/produtos/5.avif" },
-      { "slug": "gatos-castrados", "title": "Gatos Castrados", "flavor": "Frango e Arroz", "weights": "2,5kg e 10,1kg", "image": "/produtos/6.avif" }
+      {
+        "slug": "caes-adultos-porte-pequeno",
+        "title": "Cães Adultos",
+        "porte": "Porte Pequeno",
+        "flavor": "Frango e Arroz",
+        "weights": "2,5kg e 15kg",
+        "sabor": "Sabor",
+        "image": "/produtos/1.avif",
+        "disp": "Disponível em embalagens de",
+        "image1": "/produtos/1.1.avif",
+
+        "icons": [
+          "/produtos/icones/proteinas.svg",
+          "/produtos/icones/paladares.svg",
+          "/produtos/icones/ambientes.svg",
+          "/produtos/icones/complexo.svg",
+          "/produtos/icones/antioxidantes.svg",
+          "/produtos/icones/oral.svg",
+          "/produtos/icones/formato.svg",
+          "/produtos/icones/pele.svg",
+          "/produtos/icones/intestino.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, farinha de carne e ossos de bovino, grão de arroz, grão de milho*, farelo de arroz, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (0,5%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sódio (0,09%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,04%), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100,00 g; proteína bruta (mín.) 220,00 g; extrato etéreo (mín.) 90,00 g; matéria fibrosa (máx.) 35,00 g; matéria mineral (máx.) 95,00 g; cálcio (mín.) 10,00 g; cálcio (máx.) 18,00 g; fósforo (mín.) 8.000,00 mg; sódio (mín.) 1.200,00 mg; potássio (mín.) 5.800,00 mg. Aminoácidos: Lisina (mín.) 9.000,00 mg; metionina (mín.) 4.600,00 mg. Ácidos graxos essenciais: Ômega 6 (mín.) 21,00 g; Ômega 3 (mín.) 1.000,00 mg. Ingredientes e nutrientes funcionais: Carnitina (mín.) 90,00 mg; mananoligossacarídeos (mín.) 130,00 mg; beta-glucanas (mín.) 240,00 mg; Vitamina E (mín.) 102,00 UI; Vitamina C (mín.) 27,00 mg; selênio orgânico (mín.) 0,10 mg; zinco orgânico (mín.) 29,00 mg. Energia metabolizável (mín.) 3.610,00 kcal.",
+          "enrichment": "Vitamina A: 10.628 UI, Vitamina D3: 829 UI, Vitamina E: 102 UI, Vitamina K3: 1,03 mg, Vitamina B1: 3,42 mg, Vitamina B2: 8,82 mg, Vitamina B3: 23,49 mg, Vitamina B5: 19,17 mg, Vitamina B6: 2,52 mg, Vitamina B9: 0,41 mg, Vitamina B12: 53,46 mcg, Vitamina H: 0,22 mg, Vitamina C: 27 mg, Fosfatidilcolina: 6,51 mg, Ferro: 63,36 mg, Cobre: 7,92 mg, Zinco: 97,56 mg, Manganês: 6,03 mg, Selênio: 0,34 mg, Iodo: 1,08 mg. *Valores por kg do produto, expressos em mínimos."
+        }
+      },
+      {
+        "slug": "caes-adultos-porte-medio-grande",
+        "title": "Cães Adultos",
+        "porte": "Porte Médio e Grande",
+        "flavor": "Frango e Arroz",
+        "weights": "2,5kg e 15kg",
+        "sabor": "Sabor",
+        "image": "/produtos/2.avif",
+        "disp": "Disponível em embalagens de"
+      },
+      {
+        "slug": "caes-adultos-todos-portes",
+        "title": "Cães Adultos",
+        "porte": "Todos os Portes",
+        "flavor": "Carne e Frango",
+        "weights": "2,5kg e 15kg",
+        "sabor": "Sabor",
+        "image": "/produtos/3.avif",
+        "disp": "Disponível em embalagens de"
+      },
+      {
+        "slug": "caes-filhotes-todos-portes",
+        "title": "Cães Filhotes",
+        "porte": "Todos os Portes",
+        "flavor": "Frango e Arroz",
+        "weights": "2,5kg e 15kg",
+        "sabor": "Sabor",
+        "image": "/produtos/4.avif",
+        "disp": "Disponível em embalagens de"
+      },
+      {
+        "slug": "gatos-adultos",
+        "title": "Gatos Adultos",
+        "porte": "",
+        "flavor": "Frango e Arroz",
+        "weights": "2,5kg e 10,1kg",
+        "sabor": "Sabor",
+        "image": " /produtos/5.avif",
+        "disp": "Disponível em embalagens de"
+      },
+      {
+        "slug": "gatos-castrados",
+        "title": "Gatos Castrados",
+        "porte": "",
+        "flavor": "Frango e Arroz",
+        "weights": "2,5kg e 10,1kg",
+        "image": " /produtos/6.avif",
+        "sabor": "Sabor",
+        "disp": "Disponível em embalagens de"
+      }
     ]
   }
 }
