@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import Logo from "./subc/Logo";
+
 
 type HeaderProps = {
   locale: "pt" | "en" | "es";
@@ -23,8 +23,8 @@ export default function Header({ locale }: HeaderProps) {
   return (
     <section className="bg-vermelhop py-2">
       <div className="maxW flex items-center justify-between">
-        <Link href={`/${locale}`} className="max-w-[200px]">
-          <Logo size={110} />
+        <Link href={`/${locale}`} className="">
+          <img src="/logo.svg" alt="Logo" className="w-[100px]" />
         </Link>
 
         <div className="flex items-center gap-4">

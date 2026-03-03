@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Logo from "./subc/Logo";
+
 
 type FooterProps = {
   locale: "pt" | "en";
@@ -14,7 +14,8 @@ export default function Footer({ locale, dict }: FooterProps) {
       <div className="container mx-auto px-4">
         {/* Logo Centralizado */}
         <Link href={`/${locale}`} className="flex justify-center mb-10">
-          <Logo size={210} />
+          <img src="/logo.svg" alt="Logo" className="w-[250px]" />
+    
         </Link>
 
         {/* Grid de Informações */}
