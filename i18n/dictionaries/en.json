@@ -1,0 +1,140 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "The best food for your dog",
+    "subtitle": "Selected proteins to nourish even the most demanding palates.",
+    "primaryButton": "Discover the full range"
+  },
+  "blog": {
+    "title": "Everything about care and well-being for your pet."
+  },
+  "dogs": {
+    "title": "Dogs",
+    "p": "The Puravie line for Dogs was created with carefully selected proteins, offering excellent nutrition. With a delicious taste that wins over even the most demanding palates, it helps acceptance and turns every meal into a moment of pleasure and satisfaction.",
+    "primaryButton": "Learn more"
+  },
+  "cats": {
+    "title": "Cats",
+    "p": "In the Puravie line for Cats, you’ll find the essential nutrients to promote your feline friend’s health and well-being, with a taste they’ll love. Enriched with natural antioxidants such as vitamin C, vitamin E, and organic selenium, our food helps protect against premature aging.",
+    "primaryButton": "Learn more"
+  },
+  "about": {
+    "title": "About us",
+    "p": "Our brand is a warm hug in every kibble!",
+    "primaryButton": "Read more"
+  },
+  "program": {
+    "title": "Satisfaction Program",
+    "title2": "110% satisfaction or your money back",
+    "p": "Our four-legged family members mean great responsibility, love, and challenge. We know they have their own tastes, and getting the flavor right can be difficult. Don’t forget to always offer the correct nutrition considering size, life stage, and in some cases their specific needs. A complete diet helps your pet enjoy a better quality of life. Follow your veterinarian’s recommendations, always provide fresh water, walks, affection, and lots of love. If your pet doesn’t adapt to our food, don’t worry — we have the 110% Satisfaction campaign — we can exchange it for another variety or offer a refund of the amount paid + 10%. To do so, contact our Customer Service and have on hand:",
+    "list": [
+      "Receipt/invoice from the partner store where you purchased the product",
+      "Your personal information",
+      "Keep at least 75% of the product in the original package, following the instructions on the packaging",
+      "Product within the expiration date printed on the package"
+    ],
+    "badgeSrc": "/110_br.svg",
+    "primaryButton": "Read more"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "fullName": {
+      "label": "Full name",
+      "placeholder": "Enter your name"
+    },
+    "email": {
+      "label": "Email",
+      "placeholder": "Enter your email"
+    },
+    "phone": {
+      "label": "WhatsApp",
+      "placeholder": "Enter your WhatsApp"
+    },
+    "about": {
+      "label": "What would you like to talk about?",
+      "placeholder": "Select an option",
+      "options": [
+        "Pet parent",
+        "Veterinarian",
+        "Retailer",
+        "Breeder",
+        "Supplier",
+        "Trainer",
+        "NGO",
+        "Other"
+      ]
+    },
+    "message": {
+      "label": "Message",
+      "placeholder": "Write your message here..."
+    },
+    "button": "Send message",
+    "contactBar": {
+      "email": "sac@noupetcare.com",
+      "phone": "(19) 99944-8710"
+    }
+  },
+  "buy": {
+    "title": "Where to buy",
+    "subtitle": "Want to know how to purchase Puravie products? Contact our sales team to find the ideal food for your pet. We’re ready to help! Visit our contact page and talk to us.",
+    "primaryButton": "Buy"
+  },
+  "footer": {
+    "title": "© 2026 PURAVIE. A NOU Pet Care brand.",
+    "title2": "Developed by",
+    "subtitle": "Want to know how to purchase Puravie products? Contact our sales team to find the ideal food for your pet. We’re ready to help! Visit our contact page and talk to us.",
+    "primaryButton": "Buy"
+  },
+  "products": {
+    "title": "Nutrition that nourishes, a commitment that transforms.",
+    "cta": "Learn more",
+    "items": [
+      {
+        "slug": "caes-adultos-porte-pequeno",
+        "title": "Adult Dogs — Small Breed",
+        "flavor": "Chicken & Rice",
+        "weights": "2.5 kg and 15 kg",
+        "image": "/produtos/1.avif"
+      },
+      {
+        "slug": "caes-adultos-porte-medio-grande",
+        "title": "Adult Dogs — Medium & Large Breeds",
+        "flavor": "Chicken & Rice",
+        "weights": "2.5 kg and 15 kg",
+        "image": "/produtos/2.avif"
+      },
+      {
+        "slug": "caes-adultos-todos-portes",
+        "title": "Adult Dogs — All Breeds",
+        "flavor": "Beef & Chicken",
+        "weights": "2.5 kg and 15 kg",
+        "image": "/produtos/3.avif"
+      },
+      {
+        "slug": "caes-filhotes-todos-portes",
+        "title": "Puppies — All Breeds",
+        "flavor": "Chicken & Rice",
+        "weights": "2.5 kg and 15 kg",
+        "image": "/produtos/4.avif"
+      },
+      {
+        "slug": "gatos-adultos",
+        "title": "Adult Cats",
+        "flavor": "Chicken & Rice",
+        "weights": "2.5 kg and 10.1 kg",
+        "image": "/produtos/5.avif"
+      },
+      {
+        "slug": "gatos-castrados",
+        "title": "Neutered Cats",
+        "flavor": "Chicken & Rice",
+        "weights": "2.5 kg and 10.1 kg",
+        "image": "/produtos/6.avif"
+      }
+    ]
+  }
+}

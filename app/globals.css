@@ -3,6 +3,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-title: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
 }
 
 @theme inline {
@@ -10,6 +12,11 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+
+  --font-title: "Montserrat", sans-serif;
+  --font-body: "Open Sans", sans-serif;
+
+  --color-vermelhop: #c70217;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -22,5 +29,100 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+}
+
+.maxW {
+  max-width: 1520px;
+  padding: 0 2%;
+  margin: 0 auto;
+}
+
+.bgHero1 {
+  background-image: url("/hero1_br.avif");
+  background-size: cover;
+  height: 100vh;
+  background-position: bottom;
+}
+
+.bgctabr {
+  background-image: url("/ctablog_br.avif");
+  background-size: cover;
+}
+
+.bgabout {
+  background-image: url("/about.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgContact {
+  background-image: url("/contact.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgbuy {
+  background-image: url("/buy.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+.bgProducts {
+  background-image: url("/produtos/bg-products.avif");
+  background-size: cover;
+  background-position: center;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-title);
+}
+
+.phoneWrap .PhoneInput {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+}
+
+.phoneWrap .PhoneInputCountry {
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Ícone/bandeira */
+.phoneWrap .PhoneInputCountryIcon {
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+/* Select invisível (mas clicável) */
+.phoneWrap .PhoneInputCountrySelect {
+  cursor: pointer;
+}
+
+/* Input do número */
+.phoneWrap .PhoneInputInput {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 8px 10px;
+  color: #000000;
+  /* ajuste se quiser */
+  outline: none;
+  border: none;
+}
+
+/* Opcional: placeholder */
+.phoneWrap .PhoneInputInput::placeholder {
+  opacity: 0.7;
 }

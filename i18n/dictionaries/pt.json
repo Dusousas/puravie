@@ -1,0 +1,107 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "contact": "Contato"
+  },
+  "hero": {
+    "title": "O melhor alimento para o seu cachorro",
+    "subtitle": "Proteínas selecionadas para nutrir até os paladares mais exigentes.",
+    "primaryButton": "Conheça a linha completa"
+  },
+  "blog": {
+    "title": "Tudo sobre cuidado e bem-estar para o seu pet."
+  },
+  "dogs": {
+    "title": "Cães",
+    "p": "A linha Puravie para Cães foi criada com proteínas cuidadosamente selecionadas, oferecendo excelente nutrição. Com um delicioso sabor que conquista até os paladares mais exigentes, facilita a aceitação e transforma cada refeição em um momento de prazer e satisfação.",
+    "primaryButton": "Saiba mais"
+  },
+  "cats": {
+    "title": "Gatos",
+    "p": "Na linha Puravie para Gatos, você encontra os nutrientes essenciais para promover a saúde e o bem-estar do seu amigo felino, com um sabor que ele vai adorar. Enriquecido com antioxidantes naturais, como vitamina C, vitamina E e selênio orgânico, nosso alimento ajuda a proteger contra o envelhecimento precoce.",
+    "primaryButton": "Saiba mais"
+  },
+  "about": {
+    "title": "Sobre nós",
+    "p": "Nossa marca é um abraço caloroso em forma de grão!",
+    "primaryButton": "Leia mais"
+  },
+
+  "program": {
+    "title": "Programa de Satisfação",
+    "title2": "Satisfação de 110% ou seu dinheiro de volta",
+    "p": "Nossos filhos de quatro patas significam uma grande responsabilidade, amor e desafio. Sabemos que eles possuem seus próprios gostos e acertar o paladar deles é um desafio. Não se esqueça de oferecer sempre a nutrição correta considerando o porte, fase de vida e em alguns casos suas necessidades especificas. É através de uma alimentação completa que você ajuda a oferecer ao seu bichinho, melhor qualidade de vida. Siga as recomendações do seu médico veterinário, ofereça sempre água fresca, passeios, carinho e muito amor. Se seu pet não se adaptar ao nosso alimento, não se preocupe – temos a campanha Satisfação 110% - podemos trocar por outra variedade ou oferecer o reembolso do valor pago + 10%. Para isso, entre em contato com nosso SAC e tenha em mãos",
+    "list": [
+      "Nota fiscal da loja parceira onde adquiriu o produto",
+      "Seus dados pessoais",
+      "Conserve no mínimo 75% do produto na embalagem original seguindo as orientações contidas na própria embalagem",
+      "Produto dentro do prazo de validade impresso na embalagem"
+    ],
+    "badgeSrc": "/110_br.svg",
+    "primaryButton": "Leia mais"
+  },
+  "contact": {
+    "title": "Fale com a gente",
+    "fullName": {
+      "label": "Nome completo",
+      "placeholder": "Digite seu nome"
+    },
+    "email": {
+      "label": "E-mail",
+      "placeholder": "Digite seu e-mail"
+    },
+    "phone": {
+      "label": "WhatsApp",
+      "placeholder": "Digite seu WhatsApp"
+    },
+    "about": {
+      "label": "Sobre o que você quer falar?",
+      "placeholder": "Selecione uma opção",
+      "options": [
+        "Pai ou mãe de pet",
+        "Veterinário",
+        "Lojista",
+        "Criador",
+        "Fornecedor",
+        "Adestrador",
+        "Ong",
+        "Outros"
+      ]
+    },
+    "message": {
+      "label": "Mensagem",
+      "placeholder": "Escreva sua mensagem aqui..."
+    },
+    "button": "Enviar mensagem",
+    "contactBar": {
+      "email": "sac@noupetcare.com",
+      "phone": "(19) 99944-8710"
+    }
+  },
+  "buy": {
+    "title": "Onde comprar",
+    "subtitle": "Quer saber como adquirir os produtos Puravie? Entre em contato com o nosso time de vendas para encontrar o alimento ideal para o seu pet. Estamos prontos para ajudar!  Acesse nossa página de contato e fale conosco.",
+    "primaryButton": "Comprar"
+  },
+  "footer": {
+    "title": "© 2026 PURAVIE. Uma marca NOU Pet Care.",
+    "title2": "Desenvlvido por",
+
+    "subtitle": "Quer saber como adquirir os produtos Puravie? Entre em contato com o nosso time de vendas para encontrar o alimento ideal para o seu pet. Estamos prontos para ajudar!  Acesse nossa página de contato e fale conosco.",
+    "primaryButton": "Comprar"
+  },
+
+  "products": {
+    "title": "Alimento que nutre, compromisso que transforma.",
+    "cta": "Saiba mais",
+    "items": [
+      { "slug": "caes-adultos-porte-pequeno", "title": "Cães Adultos Porte Pequeno", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/1.avif" },
+      { "slug": "caes-adultos-porte-medio-grande", "title": "Cães Adultos Porte Médio e Grande", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/2.avif" },
+      { "slug": "caes-adultos-todos-portes", "title": "Cães Adultos Todos os Portes", "flavor": "Carne e Frango", "weights": "2,5kg e 15kg", "image": "/produtos/3.avif" },
+      { "slug": "caes-filhotes-todos-portes", "title": "Cães Filhotes Todos os Portes", "flavor": "Frango e Arroz", "weights": "2,5kg e 15kg", "image": "/produtos/4.avif" },
+      { "slug": "gatos-adultos", "title": "Gatos Adultos", "flavor": "Frango e Arroz", "weights": "2,5kg e 10,1kg", "image": "/produtos/5.avif" },
+      { "slug": "gatos-castrados", "title": "Gatos Castrados", "flavor": "Frango e Arroz", "weights": "2,5kg e 10,1kg", "image": "/produtos/6.avif" }
+    ]
+  }
+}
