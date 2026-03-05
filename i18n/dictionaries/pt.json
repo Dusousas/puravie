@@ -176,5 +176,41 @@
         "disp": "Disponível em embalagens de"
       }
     ]
+  },
+  "about": {
+    "title": "Nossa marca é um abraço caloroso em forma de grão!",
+    "description": "O momento de encher a tigela é um ritual marcado por felicidade, alegria e diversão. Esse momento é tão puro para nossos companheiros de quatro patas que eles merecem uma alimentação a altura.  Para isso, nasceu a Puravie. Uma nova marca, um novo propósito, um novo conceito em nutrição animal. Cada ingrediente carrega uma promessa de cuidado profundo e o nosso compromisso com a sociedade é o reflexo do amor que temos pelo planeta. Com a Puravie, toda refeição é um gesto de amor.",
+    "mission": {
+      "title": "Nossa Missão",
+      "description": "Nutrir relações profundas e significativas com os pets e seus familiares, sempre com o objetivo de fazer a diferença com alimento de qualidade e compromisso com a sociedade."
+    },
+    "commitment": {
+      "title": "Compromisso Social",
+      "description": "Ao escolher Puravie, você se junta a nós em uma jornada de responsabilidade e amor. Parte de cada venda é destinada a iniciativas que apoiam o bem-estar animal e projetos sociais. A cada porção você tem uma oportunidade de espalhar amor e fazer a diferença."
+    },
+    "values": {
+      "title": "Nossos Valores",
+      "list": [
+        "Compromisso",
+        "Respeito",
+        "Cuidado",
+        "Autenticidade",
+        "Empatia",
+        "Transparência"
+      ]
+    },
+    "packaging": {
+      "title": "Nossas embalagens são sustentáveis",
+      "description1": "Nossas embalagens são 100% recicláveis e refletem nosso compromisso com o meio ambiente.",
+      "description2": "Embora não tenhamos zíperes sofisticados ou lacres especiais, optamos por materiais reaproveitáveis, que podem ser encaminhados para a coleta seletiva.",
+      "description3": "Além disso, utilizamos cores de forma inteligente para reduzir o impacto ambiental e,em parceria com o selo EU RECICLO, compensamos cada embalagem produzida com apoio a cooperativas de reciclagem.",
+      "description4": "Ao escolher PURAVIE, você também apoia uma comunidade dedicada a cuidar do nosso planeta.",
+      "description5": "Junte - se a nós nessa missão!"
+
+
+
+
+
+    }
   }
 }
