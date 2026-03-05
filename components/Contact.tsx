@@ -42,7 +42,7 @@ export default function Contact({ locale, dict }: ContactProps) {
 
   return (
     <>
-      <section className="bgContact py-10">
+      <section id="contato" className="bgContact py-10">
         <div className="maxW flex flex-col lg:items-end lg:justify-end">
           <form
             className="bg-[#F0F0F0] text-black p-8 rounded-2xl lg:w-[600px]"

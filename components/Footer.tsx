@@ -45,7 +45,7 @@ export default function Footer({ locale, dict }: FooterProps) {
         
         <div className="mt-10 text-center opacity-70 uppercase">
           <p>{dict.footer?.title ?? "© 2026 Noupetcare. Todos os direitos reservados."}</p>
-          <p className="mt-2 text-sm">{dict.footer?.title2 ?? "Desenvolvido por Youon"} <a className="underline" target="_blank" href="www.agenciayouon.com">Youon</a></p>
+          <a target="_blank" className="uppercase gap-1 flex justify-center items-center text-[10px] mt-2" href="https://agenciayouon.com/"> <p className="">{dict.footer?.title2 ?? "Desenvolvido por Youon"} </p> Youon</a>
 
         </div>
       </div>

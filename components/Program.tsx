@@ -9,7 +9,7 @@ type ProgramProps = {
 export default function Program({ locale, dict }: ProgramProps) {
   return (
     <>
-      <section className="bg-vermelhop/80 py-20">
+      <section id="satisfacao" className="bg-vermelhop/80 py-20">
         <div className="maxW flex flex-col justify-center lg:flex-row">
           <article className="lg:w-1/2">
             <h2 className="text-3xl font-bold uppercase tracking-wider text-white text-center lg:text-left">

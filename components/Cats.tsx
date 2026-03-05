@@ -22,7 +22,7 @@ export default function Cats({ locale, dict }: CatsProps) {
 
             <div className="mt-4 flex w-full">
               <Link
-                href={`/${locale}/about`}
+                href={`/${locale}/produtos`}
                 className="bg-[#031C6F] text-text-white px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition mx-auto lg:mx-0"
               >
                 {dict.dog?.primaryButton ?? "Saiba mais"}

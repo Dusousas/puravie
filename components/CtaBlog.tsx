@@ -7,7 +7,7 @@ type CtaBlogProps = {
 
 export default function CtaBlog({ locale, dict }: CtaBlogProps) {
   return (
-    <a href="">
+    <a href="/blog">
       <section className="bgctabr py-12 border-t-2 border-white">
         <div className="maxW flex flex-col items-center gap-x-30 w-full lg:flex-row">
           <img src="/logo_blog.avif" alt="" />

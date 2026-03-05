@@ -3,7 +3,7 @@
 import Link from "next/link";
 import React, { useEffect, useMemo, useState } from "react";
 import { createPortal } from "react-dom";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 type NavbarProps = {
   locale: "pt" | "en" | "es";
@@ -16,8 +16,13 @@ function stripLocale(pathname: string) {
   return `/${rest}`.replace(/\/$/, "") || "/";
 }
 
+type NavItem =
+  | { type: "link"; label: string; href: string }
+  | { type: "section"; label: string; sectionId: string };
+
 export default function Navbar({ locale, dict }: NavbarProps) {
   const pathname = usePathname();
+  const router = useRouter();
 
   const [open, setOpen] = useState(false);
   const [mounted, setMounted] = useState(false);
@@ -26,17 +31,38 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   const restPath = stripLocale(pathname);
   const suffix = restPath === "/" ? "" : restPath;
 
-  const items = useMemo(
+  const isHome =
+    pathname === `/${locale}` ||
+    pathname === `/${locale}/` ||
+    pathname === `/${locale}${""}`; // segurança
+
+  const items: NavItem[] = useMemo(
     () => [
-      { label: dict.nav?.home ?? "Home", href: `/${locale}` },
-      { label: dict.nav?.products ?? "Produtos", href: `/${locale}/produtos` },
-      { label: dict.nav?.about ?? "A Puravie", href: `/${locale}/sobre-nos` },
+      { type: "link", label: dict.nav?.home ?? "Home", href: `/${locale}` },
       {
-        label: dict.nav?.program ?? "Programa de Satisfação",
-        href: `/${locale}/programa-de-satisfacao`,
+        type: "link",
+        label: dict.nav?.products ?? "Produtos",
+        href: `/${locale}/produtos`,
       },
-      { label: dict.nav?.contact ?? "Fale Conosco", href: `/${locale}/contato` },
-      { label: dict.nav?.adocao ?? "Blog Puravie", href: `/${locale}/blog` },
+      {
+        type: "link",
+        label: dict.nav?.about ?? "A Puravie",
+        href: `/${locale}/sobre-nos`,
+      },
+
+      // ✅ Agora rola para sessão (sem hash)
+      {
+        type: "section",
+        label: dict.nav?.program ?? "Programa de Satisfação",
+        sectionId: "satisfacao", // <-- ID da seção na Home
+      },
+      {
+        type: "section",
+        label: dict.nav?.contact ?? "Fale Conosco",
+        sectionId: "contato", // <-- ID da seção na Home
+      },
+
+      { type: "link", label: dict.nav?.adocao ?? "Blog Puravie", href: `/${locale}/blog` },
     ],
     [dict, locale],
   );
@@ -67,6 +93,29 @@ export default function Navbar({ locale, dict }: NavbarProps) {
   useEffect(() => {
     setOpen(false);
   }, [pathname]);
+
+  function scrollToSection(sectionId: string) {
+    const el = document.getElementById(sectionId);
+    if (!el) return;
+
+    // rolagem suave
+    el.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
+
+  function handleSectionClick(sectionId: string) {
+    setOpen(false);
+
+    // Se já está na Home, rola direto
+    if (isHome) {
+      // pequeno timeout pra garantir fechamento do drawer antes
+      setTimeout(() => scrollToSection(sectionId), 50);
+      return;
+    }
+
+    // Se não está na Home, salva e navega pra Home (sem hash)
+    sessionStorage.setItem("scrollToSection", sectionId);
+    router.push(`/${locale}`);
+  }
 
   const MobileDrawer = (
     <div
@@ -118,9 +167,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         {/* Bandeiras no Mobile */}
         <div className="px-6 py-4 border-b border-white/15">
-          <p className="text-white/90 text-xs uppercase font-semibold tracking-wide">
-            Idioma
-          </p>
+          <p className="text-white/90 text-xs uppercase font-semibold tracking-wide">Idioma</p>
 
           <div className="mt-3 flex items-center gap-3">
             <Link href={`/pt${suffix}`} onClick={() => setOpen(false)}>
@@ -128,9 +175,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
                 src="/pt.png"
                 alt="Português"
                 className={`w-[34px] h-[24px] object-cover border-2 border-white rounded-sm transition-all cursor-pointer ${
-                  locale === "pt"
-                    ? "opacity-100 scale-110"
-                    : "opacity-70 hover:opacity-100"
+                  locale === "pt" ? "opacity-100 scale-110" : "opacity-70 hover:opacity-100"
                 }`}
               />
             </Link>
@@ -140,9 +185,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
                 src="/us.png"
                 alt="English"
                 className={`w-[34px] h-[24px] object-cover border-2 border-white rounded-sm transition-all cursor-pointer ${
-                  locale === "en"
-                    ? "opacity-100 scale-110"
-                    : "opacity-70 hover:opacity-100"
+                  locale === "en" ? "opacity-100 scale-110" : "opacity-70 hover:opacity-100"
                 }`}
               />
             </Link>
@@ -152,9 +195,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
                 src="/es.png"
                 alt="Español"
                 className={`w-[34px] h-[24px] object-cover border-2 border-white rounded-sm transition-all cursor-pointer ${
-                  locale === "es"
-                    ? "opacity-100 scale-110"
-                    : "opacity-70 hover:opacity-100"
+                  locale === "es" ? "opacity-100 scale-110" : "opacity-70 hover:opacity-100"
                 }`}
               />
             </Link>
@@ -164,17 +205,33 @@ export default function Navbar({ locale, dict }: NavbarProps) {
         {/* Links */}
         <nav className="px-6 py-4">
           <ul className="flex flex-col">
-            {items.map((item) => (
-              <li key={item.href} className="border-b border-white/10 last:border-b-0">
-                <Link
-                  href={item.href}
-                  onClick={() => setOpen(false)}
-                  className="block py-4 text-white uppercase text-sm font-semibold"
-                >
-                  {item.label}
-                </Link>
-              </li>
-            ))}
+            {items.map((item) => {
+              if (item.type === "link") {
+                return (
+                  <li key={item.href} className="border-b border-white/10 last:border-b-0">
+                    <Link
+                      href={item.href}
+                      onClick={() => setOpen(false)}
+                      className="block py-4 text-white uppercase text-sm font-semibold"
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              }
+
+              return (
+                <li key={item.sectionId} className="border-b uppercase border-white/10 last:border-b-0">
+                  <button
+                    type="button"
+                    onClick={() => handleSectionClick(item.sectionId)}
+                    className="w-full text-left block py-4 text-white uppercase text-sm font-semibold hover:opacity-90 transition"
+                  >
+                    {item.label}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
         </nav>
       </aside>
@@ -186,16 +243,29 @@ export default function Navbar({ locale, dict }: NavbarProps) {
       {/* DESKTOP */}
       <nav className="hidden md:block">
         <ul className="flex items-center gap-8 uppercase text-sm">
-          {items.map((item) => (
-            <li key={item.href}>
-              <Link
-                href={item.href}
-                className="text-white font-semibold hover:opacity-80 transition"
-              >
-                {item.label}
-              </Link>
-            </li>
-          ))}
+          {items.map((item) => {
+            if (item.type === "link") {
+              return (
+                <li key={item.href}>
+                  <Link href={item.href} className="text-white font-semibold hover:opacity-80 transition">
+                    {item.label}
+                  </Link>
+                </li>
+              );
+            }
+
+            return (
+              <li key={item.sectionId}>
+                <button
+                  type="button"
+                  onClick={() => handleSectionClick(item.sectionId)}
+                  className="text-white font-semibold uppercase cursor-pointer hover:opacity-80 transition"
+                >
+                  {item.label}
+                </button>
+              </li>
+            );
+          })}
         </ul>
       </nav>
 
@@ -208,12 +278,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
         className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-md border border-white/30 hover:border-white/50 transition"
       >
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" className="text-white">
-          <path
-            d="M4 7h16M4 12h16M4 17h16"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-          />
+          <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
         </svg>
       </button>
 

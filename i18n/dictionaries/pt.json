@@ -1,4 +1,11 @@
 {
+  "notFound": {
+    "title": "Página não encontrada",
+    "code": "404",
+    "description": "Desculpe! A página que você está procurando não existe. Mas temos outras coisas incríveis para você explorar!",
+    "backHome": "Voltar ao Início",
+    "shop": "Ver Produtos"
+  },
   "nav": {
     "home": "Início",
     "about": "Sobre",
