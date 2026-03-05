@@ -26,7 +26,9 @@ export default async function Page({
       <Dogs locale={locale} dict={dict} />
       <Cats locale={locale} dict={dict} />
       <About locale={locale} dict={dict} />
+
       <Program locale={locale} dict={dict} />
+
       <Contact locale={locale} dict={dict} />
       <Buy locale={locale} dict={dict} />
     </>
