@@ -13,17 +13,15 @@ export default function About({ locale, dict }: AboutProps) {
       <section className="bgabout py-20">
         <div className="maxW flex justify-end">
           <article className="">
-            <h2 className="text-5xl font-bold uppercase tracking-wider text-white">
+            <h2 className=" font-bold text-3xl uppercase tracking-wider text-white text-center lg:text-left lg:text-5xl">
               {dict.about?.title ?? "about Title"}
             </h2>
-            <p className="text-white mt-4">
-              {dict.about?.p ?? "about paragrafo"}
-            </p>
 
-            <div className="mt-6 flex">
+
+            <div className="mt-6 flex w-full">
               <Link
                 href={`/${locale}/about`}
-                className="bg-white text-text-white px-6 py-3 text-black rounded-lg font-semibold hover:opacity-90 transition"
+                className="bg-white text-text-white px-6 py-3 text-black rounded-lg font-semibold hover:opacity-90 transition mx-auto lg:mx-0"
               >
                 {dict.about?.primaryButton ?? "Leia amis"}
               </Link>

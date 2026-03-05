@@ -11,15 +11,15 @@ export default function Buy({ locale, dict }: BuyProps) {
   return (
     <>
       <section className="bgbuy py-20">
-        <div className="maxW flex justify-end">
+        <div className="maxW flex flex-col lg:flex-row lg:justify-end">
           <article className="lg:w-1/2 lg:mr-20">
             {/* Título */}
-            <h2 className="text-3xl uppercase font-bold leading-tight max-w-[700px]">
+            <h2 className="text-3xl uppercase font-bold leading-tight max-w-[700px] text-center lg:text-left">
               {dict.buy?.title ?? "buy Title"}
             </h2>
 
             {/* Subtítulo */}
-            <p className="mt-4  max-w-[600px] opacity-90">
+            <p className="mt-4  max-w-[600px] opacity-90 text-center lg:text-left">
               {dict.buy?.subtitle ?? "buy subtitle"}
             </p>
 
@@ -27,7 +27,7 @@ export default function Buy({ locale, dict }: BuyProps) {
             <div className="mt-6 flex gap-4">
               <Link
                 href={`/${locale}/about`}
-                className="bg-white text-vermelhop tracking-widest uppercase px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+                className="bg-white text-vermelhop tracking-widest uppercase px-6 py-3 rounded-lg font-semibold hover:opacity-90 transition mx-auto lg:mx-0"
               >
                 {dict.buy?.primaryButton ?? "Saiba mais"}
               </Link>

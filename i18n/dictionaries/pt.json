@@ -10,7 +10,11 @@
     "primaryButton": "Conheça a linha completa"
   },
   "blog": {
-    "title": "Tudo sobre cuidado e bem-estar para o seu pet."
+    "title": "Tudo sobre cuidado e bem-estar para o seu pet.",
+    "section": {
+      "title": "Blog em Breve",
+      "subtitle": "Estamos preparando conteúdo incrível sobre cuidados, saúde e bem-estar para seu pet. Fique atento!"
+    }
   },
   "dogs": {
     "title": "Cães",

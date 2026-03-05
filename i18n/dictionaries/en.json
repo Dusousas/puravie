@@ -10,7 +10,11 @@
     "primaryButton": "Discover the full range"
   },
   "blog": {
-    "title": "Everything about care and well-being for your pet."
+    "title": "Everything about care and well-being for your pet.",
+    "section": {
+      "title": "Blog Coming Soon",
+      "subtitle": "We're preparing amazing content about pet care, health, and well-being. Stay tuned!"
+    }
   },
   "dogs": {
     "title": "Dogs",

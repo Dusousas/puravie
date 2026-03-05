@@ -74,7 +74,7 @@ export default function Header({ locale, dict }: HeaderProps) {
 
         <Navbar locale={locale} dict={dict} />
 
-        <div className="flex items-center gap-4">
+        <div className="hidden lg:flex items-center gap-4">
           <Link href={`/pt${suffix}`}>
             <img
               src="/pt.png"
