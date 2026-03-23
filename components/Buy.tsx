@@ -1,12 +1,11 @@
 "use client";
 
-import Link from "next/link";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 type BuyProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 
@@ -40,7 +39,7 @@ export default function Buy({ locale, dict }: BuyProps) {
         { x: 0, opacity: 1, duration: 0.85, clearProps: "transform,opacity" }
       );
 
-      // stagger interno (bem leve)
+      // animação interna
       tl.fromTo(
         [titleRef.current, pRef.current, btnRef.current],
         { y: 14, opacity: 0 },
@@ -77,14 +76,16 @@ export default function Buy({ locale, dict }: BuyProps) {
           </p>
 
           <div className="mt-6 flex gap-4">
-            <Link
+            <a
               ref={btnRef}
-              href={`/${locale}/about`}
+              href="https://www.instagram.com/puravie/"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-white text-vermelhop tracking-widest uppercase px-6 py-3 rounded-lg font-semibold transition mx-auto lg:mx-0 inline-flex
                          hover:opacity-95 hover:-translate-y-[2px] hover:shadow-md"
             >
               {dict.buy?.primaryButton ?? "Saiba mais"}
-            </Link>
+            </a>
           </div>
         </article>
       </div>

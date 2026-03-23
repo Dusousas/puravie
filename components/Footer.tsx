@@ -4,7 +4,7 @@ import Link from "next/link";
 
 
 type FooterProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 

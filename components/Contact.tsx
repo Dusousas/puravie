@@ -8,7 +8,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 type ContactProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 
@@ -143,7 +143,9 @@ export default function Contact({ locale, dict }: ContactProps) {
 
             <div className="mt-2 phoneWrap">
               <PhoneInput
-                defaultCountry={locale === "pt" ? "BR" : "US"}
+                defaultCountry={
+                  locale === "pt" ? "BR" : locale === "es" ? "ES" : "US"
+                }
                 international
                 countryCallingCodeEditable={false}
                 value={phone}

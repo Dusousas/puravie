@@ -19,6 +19,9 @@ const openSans = Open_Sans({
 export const metadata: Metadata = {
   title: "Puravie",
   description: "Website Puravie",
+  icons: {
+    icon: "/logo.svg",
+  },
 };
 
 export default function RootLayout({

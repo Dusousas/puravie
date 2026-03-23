@@ -5,7 +5,7 @@ import { getDictionary } from "@/lib/getDictionary";
 import Script from "next/script";
 
 export function generateStaticParams() {
-  return [{ locale: "pt" }, { locale: "en" }];
+  return [{ locale: "pt" }, { locale: "en" }, { locale: "es" }];
 }
 
 export default async function LocaleLayout({

@@ -1,0 +1,218 @@
+{
+  "notFound": {
+    "title": "Pagina no encontrada",
+    "code": "404",
+    "description": "Lo sentimos. La pagina que buscas no existe, pero tenemos otras cosas increibles para que explores.",
+    "backHome": "Volver al inicio",
+    "shop": "Ver productos"
+  },
+  "nav": {
+    "home": "Inicio",
+    "products": "Productos",
+    "about": "Sobre Puravie",
+    "program": "Programa de Satisfaccion",
+    "contact": "Contacto",
+    "adocao": "Blog Puravie"
+  },
+  "hero": {
+    "title": "El mejor alimento para tu perro",
+    "subtitle": "Proteinas seleccionadas para nutrir incluso a los paladares mas exigentes.",
+    "primaryButton": "Conoce la linea completa"
+  },
+  "blog": {
+    "title": "Todo sobre cuidado y bienestar para tu mascota.",
+    "section": {
+      "title": "Blog muy pronto",
+      "subtitle": "Estamos preparando contenido increible sobre cuidados, salud y bienestar para tu mascota. Mantente atento."
+    }
+  },
+  "dogs": {
+    "title": "Perros",
+    "p": "La linea Puravie para Perros fue creada con proteinas cuidadosamente seleccionadas, ofreciendo una excelente nutricion. Con un sabor delicioso que conquista incluso a los paladares mas exigentes, facilita la aceptacion y transforma cada comida en un momento de placer y satisfaccion.",
+    "primaryButton": "Saber mas"
+  },
+  "cats": {
+    "title": "Gatos",
+    "p": "En la linea Puravie para Gatos encuentras los nutrientes esenciales para promover la salud y el bienestar de tu amigo felino, con un sabor que le encantara. Enriquecido con antioxidantes naturales como vitamina C, vitamina E y selenio organico, nuestro alimento ayuda a proteger contra el envejecimiento prematuro.",
+    "primaryButton": "Saber mas"
+  },
+  "about": {
+    "title": "Nuestra marca es un abrazo calido en forma de croqueta",
+    "p": "Nuestra marca es un abrazo calido en forma de croqueta",
+    "primaryButton": "Leer mas",
+    "description": "El momento de llenar el plato es un ritual marcado por felicidad, alegria y diversion. Ese instante es tan puro para nuestros companeros de cuatro patas que merecen una alimentacion a su altura. Asi nace Puravie. Una nueva marca, un nuevo proposito y un nuevo concepto en nutricion animal. Cada ingrediente lleva una promesa de cuidado profundo y nuestro compromiso con la sociedad refleja el amor que sentimos por el planeta. Con Puravie, cada comida es un gesto de amor.",
+    "mission": {
+      "title": "Nuestra mision",
+      "description": "Nutrir relaciones profundas y significativas con las mascotas y sus familias, siempre con el objetivo de marcar la diferencia con alimento de calidad y compromiso con la sociedad."
+    },
+    "commitment": {
+      "title": "Compromiso social",
+      "description": "Al elegir Puravie, te unes a nosotros en un camino de responsabilidad y amor. Parte de cada venta se destina a iniciativas que apoyan el bienestar animal y proyectos sociales. En cada porcion tienes una oportunidad de compartir amor y generar un impacto positivo."
+    },
+    "values": {
+      "title": "Nuestros valores",
+      "list": [
+        "Compromiso",
+        "Respeto",
+        "Cuidado",
+        "Autenticidad",
+        "Empatia",
+        "Transparencia"
+      ]
+    },
+    "packaging": {
+      "title": "Nuestros empaques son sostenibles",
+      "description1": "Nuestros empaques son 100% reciclables y reflejan nuestro compromiso con el medio ambiente.",
+      "description2": "Aunque no tengamos cierres sofisticados o sellos especiales, elegimos materiales reutilizables que pueden destinarse a la recoleccion selectiva.",
+      "description3": "Ademas, usamos los colores de manera inteligente para reducir el impacto ambiental y, junto al sello EU RECICLO, compensamos cada empaque producido apoyando a cooperativas de reciclaje.",
+      "description4": "Al elegir PURAVIE, tambien apoyas a una comunidad dedicada a cuidar nuestro planeta.",
+      "description5": "Unete a nosotros en esta mision."
+    }
+  },
+  "program": {
+    "title": "Programa de Satisfaccion",
+    "title2": "110% de satisfaccion o te devolvemos tu dinero",
+    "p": "Nuestros companeros de cuatro patas significan una gran responsabilidad, amor y desafio. Sabemos que tienen sus propios gustos y acertar con el sabor puede ser un reto. No olvides ofrecer siempre la nutricion correcta considerando su tamano, etapa de vida y, en algunos casos, sus necesidades especificas. Una alimentacion completa ayuda a brindar una mejor calidad de vida. Sigue las recomendaciones de tu veterinario, ofrece siempre agua fresca, paseos, carino y mucho amor. Si tu mascota no se adapta a nuestro alimento, no te preocupes: contamos con la campana Satisfaccion 110%. Podemos cambiarlo por otra variedad o devolver el importe pagado mas un 10%. Para ello, contacta a nuestro servicio de atencion y ten a mano:",
+    "list": [
+      "Factura o comprobante de la tienda asociada donde compraste el producto",
+      "Tus datos personales",
+      "Conserva al menos el 75% del producto en el empaque original, siguiendo las instrucciones del propio envase",
+      "Producto dentro del plazo de validez impreso en el empaque"
+    ],
+    "badgeSrc": "/110_br.svg",
+    "primaryButton": "Leer mas"
+  },
+  "contact": {
+    "title": "Habla con nosotros",
+    "fullName": {
+      "label": "Nombre completo",
+      "placeholder": "Escribe tu nombre"
+    },
+    "email": {
+      "label": "Correo electronico",
+      "placeholder": "Escribe tu correo"
+    },
+    "phone": {
+      "label": "WhatsApp",
+      "placeholder": "Escribe tu WhatsApp"
+    },
+    "about": {
+      "label": "Sobre que te gustaria hablar?",
+      "placeholder": "Selecciona una opcion",
+      "options": [
+        "Tutor de mascota",
+        "Veterinario",
+        "Minorista",
+        "Criador",
+        "Proveedor",
+        "Adiestrador",
+        "ONG",
+        "Otros"
+      ]
+    },
+    "message": {
+      "label": "Mensaje",
+      "placeholder": "Escribe tu mensaje aqui..."
+    },
+    "button": "Enviar mensaje",
+    "contactBar": {
+      "email": "sac@noupetcare.com",
+      "phone": "(19) 99944-8710"
+    }
+  },
+  "buy": {
+    "title": "Donde comprar",
+    "subtitle": "Quieres saber como adquirir los productos Puravie? Ponte en contacto con nuestro equipo de ventas para encontrar el alimento ideal para tu mascota. Estamos listos para ayudarte. Entra en nuestra pagina de contacto y habla con nosotros.",
+    "primaryButton": "Comprar"
+  },
+  "footer": {
+    "title": "© 2026 PURAVIE. Una marca de NOU Pet Care.",
+    "title2": "Desarrollado por",
+    "socialText": "Siguenos, interactua y forma parte de la comunidad",
+    "subtitle": "Quieres saber como adquirir los productos Puravie? Ponte en contacto con nuestro equipo de ventas para encontrar el alimento ideal para tu mascota. Estamos listos para ayudarte.",
+    "primaryButton": "Comprar"
+  },
+  "products": {
+    "title": "Alimento que nutre, compromiso que transforma.",
+    "cta": "Saber mas",
+    "items": [
+      {
+        "slug": "caes-adultos-porte-pequeno",
+        "title": "Perros adultos",
+        "porte": "Tamano pequeno",
+        "flavor": "Pollo y arroz",
+        "weights": "2,5 kg y 15 kg",
+        "sabor": "Sabor",
+        "image": "/produtos/1.avif",
+        "disp": "Disponible en envases de",
+        "image1": "/produtos/1.1.avif",
+        "icons": [
+          "/produtos/icones/proteinas.svg",
+          "/produtos/icones/paladares.svg",
+          "/produtos/icones/ambientes.svg",
+          "/produtos/icones/complexo.svg",
+          "/produtos/icones/antioxidantes.svg",
+          "/produtos/icones/oral.svg",
+          "/produtos/icones/formato.svg",
+          "/produtos/icones/pele.svg",
+          "/produtos/icones/intestino.svg"
+        ],
+        "specs": {
+          "composition": "Harina de visceras de aves, harina de carne y huesos de bovino, grano de arroz, grano de maiz, salvado de arroz, harina de soja, levadura de cerveza inactivada deshidratada, pulpa de remolacha deshidratada (0,5%), aceite de aves, aceite de pescados, cloruro de sodio, cloruro de potasio, hidrolizado de higado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerales (sulfato de hierro, sulfato de cobre, sulfato de zinc, sulfato de manganeso, selenito de sodio, yodato de calcio, complejo hierro aminoacido, complejo cobre aminoacido, complejo zinc aminoacido, complejo manganeso aminoacido, proteinato de selenio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sodio (0,09%), pared celular de levadura (aditivo prebiotico), zeolita (0,75%), extracto de yucca (0,04%), acido propionico, BHA y BHT.",
+          "guarantee": "Humedad (max.) 100,00 g; proteina bruta (min.) 220,00 g; extracto etereo (min.) 90,00 g; materia fibrosa (max.) 35,00 g; materia mineral (max.) 95,00 g; calcio (min.) 10,00 g; calcio (max.) 18,00 g; fosforo (min.) 8.000,00 mg; sodio (min.) 1.200,00 mg; potasio (min.) 5.800,00 mg. Aminoacidos: lisina (min.) 9.000,00 mg; metionina (min.) 4.600,00 mg. Acidos grasos esenciales: omega 6 (min.) 21,00 g; omega 3 (min.) 1.000,00 mg. Ingredientes y nutrientes funcionales: carnitina (min.) 90,00 mg; mananoligosacaridos (min.) 130,00 mg; beta-glucanos (min.) 240,00 mg; vitamina E (min.) 102,00 UI; vitamina C (min.) 27,00 mg; selenio organico (min.) 0,10 mg; zinc organico (min.) 29,00 mg. Energia metabolizable (min.) 3.610,00 kcal.",
+          "enrichment": "Vitamina A: 10.628 UI, vitamina D3: 829 UI, vitamina E: 102 UI, vitamina K3: 1,03 mg, vitamina B1: 3,42 mg, vitamina B2: 8,82 mg, vitamina B3: 23,49 mg, vitamina B5: 19,17 mg, vitamina B6: 2,52 mg, vitamina B9: 0,41 mg, vitamina B12: 53,46 mcg, vitamina H: 0,22 mg, vitamina C: 27 mg, fosfatidilcolina: 6,51 mg, hierro: 63,36 mg, cobre: 7,92 mg, zinc: 97,56 mg, manganeso: 6,03 mg, selenio: 0,34 mg, yodo: 1,08 mg. Valores por kg del producto, expresados en minimos."
+        }
+      },
+      {
+        "slug": "caes-adultos-porte-medio-grande",
+        "title": "Perros adultos",
+        "porte": "Tamano mediano y grande",
+        "flavor": "Pollo y arroz",
+        "weights": "2,5 kg y 15 kg",
+        "sabor": "Sabor",
+        "image": "/produtos/2.avif",
+        "disp": "Disponible en envases de"
+      },
+      {
+        "slug": "caes-adultos-todos-portes",
+        "title": "Perros adultos",
+        "porte": "Todos los tamanos",
+        "flavor": "Carne y pollo",
+        "weights": "2,5 kg y 15 kg",
+        "sabor": "Sabor",
+        "image": "/produtos/3.avif",
+        "disp": "Disponible en envases de"
+      },
+      {
+        "slug": "caes-filhotes-todos-portes",
+        "title": "Cachorros",
+        "porte": "Todos los tamanos",
+        "flavor": "Pollo y arroz",
+        "weights": "2,5 kg y 15 kg",
+        "sabor": "Sabor",
+        "image": "/produtos/4.avif",
+        "disp": "Disponible en envases de"
+      },
+      {
+        "slug": "gatos-adultos",
+        "title": "Gatos adultos",
+        "porte": "",
+        "flavor": "Pollo y arroz",
+        "weights": "2,5 kg y 10,1 kg",
+        "sabor": "Sabor",
+        "image": "/produtos/5.avif",
+        "disp": "Disponible en envases de"
+      },
+      {
+        "slug": "gatos-castrados",
+        "title": "Gatos castrados",
+        "porte": "",
+        "flavor": "Pollo y arroz",
+        "weights": "2,5 kg y 10,1 kg",
+        "image": "/produtos/6.avif",
+        "sabor": "Sabor",
+        "disp": "Disponible en envases de"
+      }
+    ]
+  }
+}

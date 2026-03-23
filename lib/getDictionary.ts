@@ -7,6 +7,9 @@ const dictionaries = {
 
   en: () =>
     import("@/i18n/dictionaries/en.json").then((m) => m.default),
+
+  es: () =>
+    import("@/i18n/dictionaries/es.json").then((m) => m.default),
 };
 
 export type Dictionary = typeof pt;

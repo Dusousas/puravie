@@ -22,7 +22,7 @@ export default async function SobreNosPage({
     <>
       <section className="py-10 bg-white">
         <div className="maxW">
-          <div className="">
+          <div className="mt-20">
             <video
               className="w-full  mx-auto  shadow-lg h-[600px] object-cover object-top"
               src="/sobre-nos.mp4"

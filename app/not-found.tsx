@@ -7,44 +7,65 @@ export default function NotFound() {
   const params = useParams() as { locale?: string };
   const locale = (params?.locale as "pt" | "en" | "es") ?? "pt";
 
+  const content = {
+    pt: {
+      title: "PAGINA NAO ENCONTRADA",
+      description: "DESCULPE! A PAGINA NAO EXISTE.",
+      backHome: "VOLTAR AO INICIO",
+      shop: "VER PRODUTOS",
+    },
+    en: {
+      title: "PAGE NOT FOUND",
+      description: "SORRY! THIS PAGE DOES NOT EXIST.",
+      backHome: "BACK TO HOME",
+      shop: "VIEW PRODUCTS",
+    },
+    es: {
+      title: "PAGINA NO ENCONTRADA",
+      description: "LO SENTIMOS! ESTA PAGINA NO EXISTE.",
+      backHome: "VOLVER AL INICIO",
+      shop: "VER PRODUCTOS",
+    },
+  }[locale];
+
   return (
-    <section className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center py-20 px-4">
+    <section className="flex min-h-screen items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 px-4 py-20">
       <div className="maxW w-full">
-        <div className="flex flex-col items-center justify-center text-center max-w-2xl mx-auto">
+        <div className="mx-auto flex max-w-2xl flex-col items-center justify-center text-center">
           <div className="relative mb-8">
-            <h1 className="text-9xl md:text-[150px] font-bold text-slate-300 tracking-tighter">
+            <h1 className="text-9xl font-bold tracking-tighter text-slate-300 md:text-[150px]">
               404
             </h1>
             <div className="absolute inset-0 flex items-center justify-center">
-              <p className="text-3xl md:text-5xl font-bold text-slate-900">404</p>
+              <p className="text-3xl font-bold text-slate-900 md:text-5xl">
+                404
+              </p>
             </div>
           </div>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-            PÁGINA NÃO ENCONTRADA
+          <h2 className="mb-4 text-3xl font-bold text-slate-900 md:text-4xl">
+            {content.title}
           </h2>
 
-          <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-            DESCULPE! A PÁGINA NÃO EXISTE.
+          <p className="mb-8 text-lg leading-relaxed text-slate-600">
+            {content.description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center w-full">
+          <div className="flex w-full flex-col justify-center gap-4 sm:flex-row">
             <Link
               href={`/${locale}`}
-              className="bg-white text-[#c70217] px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition border-2 border-[#c70217]"
+              className="rounded-lg border-2 border-[#c70217] bg-white px-8 py-3 font-semibold text-[#c70217] transition hover:opacity-90"
             >
-              VOLTAR AO INÍCIO
+              {content.backHome}
             </Link>
 
             <Link
               href={`/${locale}/produtos`}
-              className="bg-[#c70217] text-white px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition"
+              className="rounded-lg bg-[#c70217] px-8 py-3 font-semibold text-white transition hover:opacity-90"
             >
-              VER PRODUTOS
+              {content.shop}
             </Link>
           </div>
-
-          <div className="mt-16 text-6xl">🐾</div>
         </div>
       </div>
     </section>

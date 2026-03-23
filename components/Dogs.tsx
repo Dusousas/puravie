@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 type DogsProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 

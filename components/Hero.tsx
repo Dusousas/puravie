@@ -5,7 +5,7 @@ import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 type HeroProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 
@@ -51,10 +51,10 @@ export default function Hero({ locale, dict }: HeroProps) {
   }, []);
 
   return (
-    <section className="bgHero1">
+    <section className="bgHero1 relative mt-20">
       <div
         ref={rootRef}
-        className="maxW min-h-[80vh] flex flex-col justify-center items-start py-20"
+        className="maxW min-h-[80vh] flex flex-col justify-center items-start"
       >
         <h1
           ref={titleRef}

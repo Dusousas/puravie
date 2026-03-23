@@ -1,5 +1,6 @@
 "use client";
 
+import type { Locale } from "@/i18n/config";
 import React, { useMemo, useState } from "react";
 
 type Specs = {
@@ -8,25 +9,47 @@ type Specs = {
   enrichment: string;
 };
 
-export default function ProductSpecsTabs({ specs }: { specs: Specs }) {
-  const tabs = useMemo(
-    () => [
-      { key: "composition" as const, label: "Composição Básica" },
-      { key: "guarantee" as const, label: "Níveis de Garantia" },
-      { key: "enrichment" as const, label: "Enriquecimento" },
-    ],
-    []
-  );
+export default function ProductSpecsTabs({
+  specs,
+  locale,
+}: {
+  specs: Specs;
+  locale: Locale;
+}) {
+  const tabs = useMemo(() => {
+    const labels = {
+      pt: {
+        composition: "Composicao Basica",
+        guarantee: "Niveis de Garantia",
+        enrichment: "Enriquecimento",
+      },
+      en: {
+        composition: "Basic Composition",
+        guarantee: "Guaranteed Analysis",
+        enrichment: "Enrichment",
+      },
+      es: {
+        composition: "Composicion Basica",
+        guarantee: "Niveles Garantizados",
+        enrichment: "Enriquecimiento",
+      },
+    }[locale];
+
+    return [
+      { key: "composition" as const, label: labels.composition },
+      { key: "guarantee" as const, label: labels.guarantee },
+      { key: "enrichment" as const, label: labels.enrichment },
+    ];
+  }, [locale]);
 
   const [active, setActive] =
     useState<(typeof tabs)[number]["key"]>("composition");
 
   return (
     <section className="bg-white py-20">
-      {/* Tabs */}
       <div className="border-b border-zinc-200">
         <div className="maxW">
-          <div className="grid  grid-cols-3 text-center text-sm md:text-base">
+          <div className="grid grid-cols-3 text-center text-sm md:text-base">
             {tabs.map((t) => (
               <button
                 key={t.key}
@@ -45,9 +68,8 @@ export default function ProductSpecsTabs({ specs }: { specs: Specs }) {
         </div>
       </div>
 
-      {/* Conteúdo */}
       <div className="maxW">
-        <p className="text-zinc-900 leading-relaxed whitespace-pre-line pt-10">
+        <p className="pt-10 leading-relaxed whitespace-pre-line text-zinc-900">
           {specs[active]}
         </p>
       </div>

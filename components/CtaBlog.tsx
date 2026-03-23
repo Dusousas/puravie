@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 type CtaBlogProps = {
-  locale: "pt" | "en";
+  locale: "pt" | "en" | "es";
   dict: any;
 };
 
@@ -42,7 +42,7 @@ export default function CtaBlog({ locale, dict }: CtaBlogProps) {
   }, []);
 
   return (
-    <a href="/blog" className="block">
+    <a href={`/${locale}/blog`} className="block">
       <section
         ref={sectionRef}
         className="bgctabr py-12 border-t-2 border-white"
