@@ -168,7 +168,7 @@
         "title": "Perros adultos",
         "porte": "Tamano mediano y grande",
         "flavor": "Pollo y arroz",
-        "weights": "2,5 kg y 15 kg",
+        "weights": "15 kg",
         "sabor": "Sabor",
         "image": "/produtos/2.avif",
         "disp": "Disponible en envases de"
@@ -178,7 +178,7 @@
         "title": "Perros adultos",
         "porte": "Todos los tamanos",
         "flavor": "Carne y pollo",
-        "weights": "2,5 kg y 15 kg",
+        "weights": "15 kg",
         "sabor": "Sabor",
         "image": "/produtos/3.avif",
         "disp": "Disponible en envases de"
@@ -188,7 +188,7 @@
         "title": "Cachorros",
         "porte": "Todos los tamanos",
         "flavor": "Pollo y arroz",
-        "weights": "2,5 kg y 15 kg",
+        "weights": "15 kg",
         "sabor": "Sabor",
         "image": "/produtos/4.avif",
         "disp": "Disponible en envases de"
@@ -198,7 +198,7 @@
         "title": "Gatos adultos",
         "porte": "",
         "flavor": "Pollo y arroz",
-        "weights": "2,5 kg y 10,1 kg",
+        "weights": "10,1 kg",
         "sabor": "Sabor",
         "image": "/produtos/5.avif",
         "disp": "Disponible en envases de"

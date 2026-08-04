@@ -141,7 +141,7 @@
         "title": "Cães Adultos",
         "porte": "Porte Médio e Grande",
         "flavor": "Frango e Arroz",
-        "weights": "2,5kg e 15kg",
+        "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/2.avif",
         "disp": "Disponível em embalagens de"
@@ -151,7 +151,7 @@
         "title": "Cães Adultos",
         "porte": "Todos os Portes",
         "flavor": "Carne e Frango",
-        "weights": "2,5kg e 15kg",
+        "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/3.avif",
         "disp": "Disponível em embalagens de"
@@ -161,7 +161,7 @@
         "title": "Cães Filhotes",
         "porte": "Todos os Portes",
         "flavor": "Frango e Arroz",
-        "weights": "2,5kg e 15kg",
+        "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/4.avif",
         "disp": "Disponível em embalagens de"
@@ -171,7 +171,7 @@
         "title": "Gatos Adultos",
         "porte": "",
         "flavor": "Frango e Arroz",
-        "weights": "2,5kg e 10,1kg",
+        "weights": "10,1kg",
         "sabor": "Sabor",
         "image": " /produtos/5.avif",
         "disp": "Disponível em embalagens de"

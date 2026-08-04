@@ -115,28 +115,28 @@
         "slug": "caes-adultos-porte-medio-grande",
         "title": "Adult Dogs — Medium & Large Breeds",
         "flavor": "Chicken & Rice",
-        "weights": "2.5 kg and 15 kg",
+        "weights": "15 kg",
         "image": "/produtos/2.avif"
       },
       {
         "slug": "caes-adultos-todos-portes",
         "title": "Adult Dogs — All Breeds",
         "flavor": "Beef & Chicken",
-        "weights": "2.5 kg and 15 kg",
+        "weights": "15 kg",
         "image": "/produtos/3.avif"
       },
       {
         "slug": "caes-filhotes-todos-portes",
         "title": "Puppies — All Breeds",
         "flavor": "Chicken & Rice",
-        "weights": "2.5 kg and 15 kg",
+        "weights": "15 kg",
         "image": "/produtos/4.avif"
       },
       {
         "slug": "gatos-adultos",
         "title": "Adult Cats",
         "flavor": "Chicken & Rice",
-        "weights": "2.5 kg and 10.1 kg",
+        "weights": "10.1 kg",
         "image": "/produtos/5.avif"
       },
       {

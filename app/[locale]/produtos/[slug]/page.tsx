@@ -1,8 +1,29 @@
-import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
+import {
+  defaultLocale,
+  isLocale,
+  locales,
+  type Locale,
+} from "@/i18n/config";
 import { getDictionary } from "@/lib/getDictionary";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProductSpecsTabs from "./ProductSpecsTabs";
+
+export async function generateStaticParams() {
+  const params = await Promise.all(
+    locales.map(async (locale) => {
+      const dict = await getDictionary(locale);
+
+      return (dict.products?.items ?? [])
+        .filter((item: { slug?: string }) =>
+          Boolean(item.slug && item.slug !== "caes-adultos-porte-pequeno"),
+        )
+        .map((item: { slug?: string }) => ({ locale, slug: item.slug! }));
+    }),
+  );
+
+  return params.flat();
+}
 
 export default async function ProdutoDetalhePage({
   params,
@@ -13,11 +34,13 @@ export default async function ProdutoDetalhePage({
   const locale: Locale = isLocale(raw) ? raw : defaultLocale;
 
   const dict = await getDictionary(locale);
-  const items = dict.products?.items ?? [];
+  const items = (dict.products?.items ?? []).filter(
+    (item: { slug?: string }) => item.slug !== "caes-adultos-porte-pequeno",
+  );
   const backLabel = {
-    pt: "< Voltar para produtos",
-    en: "< Back to products",
-    es: "< Volver a productos",
+    pt: "Voltar para produtos",
+    en: "Back to products",
+    es: "Volver a productos",
   }[locale];
 
   const product = items.find((p: { slug: string }) => p.slug === slug);
@@ -25,13 +48,14 @@ export default async function ProdutoDetalhePage({
 
   return (
     <>
-      <section className="bg-white py-20">
+      <section className="bg-white pt-28 pb-20 md:pt-32">
         <div className="maxW">
           <Link
             href={`/${locale}/produtos`}
-            className="text-sm underline text-black"
+            className="inline-flex items-center gap-2 text-sm font-medium text-black underline underline-offset-4 transition-opacity hover:opacity-70"
           >
-            {backLabel}
+            <span aria-hidden="true">←</span>
+            <span>{backLabel}</span>
           </Link>
 
           <article className="mt-10 flex flex-col items-center justify-center gap-20 lg:flex-row">

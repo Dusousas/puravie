@@ -2,7 +2,9 @@ import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import { defaultLocale, isLocale, type Locale } from "@/i18n/config";
 import { getDictionary } from "@/lib/getDictionary";
-import Script from "next/script";
+import { GoogleTagManager } from "@next/third-parties/google";
+
+const gtmId = process.env.NEXT_PUBLIC_GTM_ID;
 
 export function generateStaticParams() {
   return [{ locale: "pt" }, { locale: "en" }, { locale: "es" }];
@@ -22,20 +24,7 @@ export default async function LocaleLayout({
 
   return (
     <>
-      {/* Google Analytics */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-71YNTRQ2QQ"
-        strategy="afterInteractive"
-      />
-
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-71YNTRQ2QQ');
-        `}
-      </Script>
+      {gtmId && <GoogleTagManager gtmId={gtmId} />}
 
       <Header locale={locale} dict={dict} />
 
