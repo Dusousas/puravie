@@ -1,36 +1,23 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+﻿# Puravie
 
-## Getting Started
+Site Next.js exportado como arquivos estáticos, com versões em português (`/pt/`), inglês (`/en/`) e espanhol (`/es/`).
 
-First, run the development server:
+## Desenvolvimento
 
 ```bash
+npm ci
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Publicação em Apache
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm ci
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Publique **o conteúdo de `out/`**, incluindo o arquivo oculto `out/.htaccess`, na raiz pública do domínio (por exemplo, `public_html/`). Não publique a pasta `out` como subpasta. A exportação contém os diretórios das páginas, os recursos em `_next/` e `404.html`; não é necessário executar Node.js no servidor.
 
-## Learn More
+O `.htaccess` exige `mod_rewrite` para redirecionar `/` para `/pt/`. O Apache precisa permitir a leitura de `.htaccess` (`AllowOverride` apropriado). As rotas existentes são servidas pelos respectivos diretórios com `index.html`, e caminhos inexistentes usam `404.html`.
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Como esta é uma exportação estática, o `middleware.ts` não executa no servidor. O redirecionamento inicial está configurado no Apache; se a hospedagem não usar Apache, configure a regra equivalente no servidor utilizado.

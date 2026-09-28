@@ -19,8 +19,8 @@ export default function ProductSpecsTabs({
   const tabs = useMemo(() => {
     const labels = {
       pt: {
-        composition: "Composicao Basica",
-        guarantee: "Niveis de Garantia",
+        composition: "Composição Básica",
+        guarantee: "Níveis de Garantia",
         enrichment: "Enriquecimento",
       },
       en: {
@@ -29,7 +29,7 @@ export default function ProductSpecsTabs({
         enrichment: "Enrichment",
       },
       es: {
-        composition: "Composicion Basica",
+        composition: "Composición Básica",
         guarantee: "Niveles Garantizados",
         enrichment: "Enriquecimiento",
       },
@@ -56,7 +56,7 @@ export default function ProductSpecsTabs({
                 onClick={() => setActive(t.key)}
                 className={`py-5 transition ${
                   active === t.key
-                    ? "border-b-2 border-black font-medium"
+                    ? "border-b-2 border-black font-medium text-black"
                     : "text-vermelhop hover:text-vermelhop/50"
                 }`}
                 type="button"

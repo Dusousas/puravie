@@ -97,7 +97,7 @@
   },
   "footer": {
     "title": "© 2026 PURAVIE. Uma marca NOU Pet Care.",
-    "title2": "Desenvlvido por",
+    "title2": "Desenvolvido por",
 
     "subtitle": "Quer saber como adquirir os produtos Puravie? Entre em contato com o nosso time de vendas para encontrar o alimento ideal para o seu pet. Estamos prontos para ajudar!  Acesse nossa página de contato e fale conosco.",
     "primaryButton": "Comprar"
@@ -109,34 +109,6 @@
     "cta": "Saiba mais",
     "items": [
       {
-        "slug": "caes-adultos-porte-pequeno",
-        "title": "Cães Adultos",
-        "porte": "Porte Pequeno",
-        "flavor": "Frango e Arroz",
-        "weights": "2,5kg e 15kg",
-        "sabor": "Sabor",
-        "image": "/produtos/1.avif",
-        "disp": "Disponível em embalagens de",
-        "image1": "/produtos/1.1.avif",
-
-        "icons": [
-          "/produtos/icones/proteinas.svg",
-          "/produtos/icones/paladares.svg",
-          "/produtos/icones/ambientes.svg",
-          "/produtos/icones/complexo.svg",
-          "/produtos/icones/antioxidantes.svg",
-          "/produtos/icones/oral.svg",
-          "/produtos/icones/formato.svg",
-          "/produtos/icones/pele.svg",
-          "/produtos/icones/intestino.svg"
-        ],
-        "specs": {
-          "composition": "Farinha de vísceras de aves, farinha de carne e ossos de bovino, grão de arroz, grão de milho*, farelo de arroz, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (0,5%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sódio (0,09%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,04%), ácido propiônico, BHA e BHT.",
-          "guarantee": "Umidade (máx.) 100,00 g; proteína bruta (mín.) 220,00 g; extrato etéreo (mín.) 90,00 g; matéria fibrosa (máx.) 35,00 g; matéria mineral (máx.) 95,00 g; cálcio (mín.) 10,00 g; cálcio (máx.) 18,00 g; fósforo (mín.) 8.000,00 mg; sódio (mín.) 1.200,00 mg; potássio (mín.) 5.800,00 mg. Aminoácidos: Lisina (mín.) 9.000,00 mg; metionina (mín.) 4.600,00 mg. Ácidos graxos essenciais: Ômega 6 (mín.) 21,00 g; Ômega 3 (mín.) 1.000,00 mg. Ingredientes e nutrientes funcionais: Carnitina (mín.) 90,00 mg; mananoligossacarídeos (mín.) 130,00 mg; beta-glucanas (mín.) 240,00 mg; Vitamina E (mín.) 102,00 UI; Vitamina C (mín.) 27,00 mg; selênio orgânico (mín.) 0,10 mg; zinco orgânico (mín.) 29,00 mg. Energia metabolizável (mín.) 3.610,00 kcal.",
-          "enrichment": "Vitamina A: 10.628 UI, Vitamina D3: 829 UI, Vitamina E: 102 UI, Vitamina K3: 1,03 mg, Vitamina B1: 3,42 mg, Vitamina B2: 8,82 mg, Vitamina B3: 23,49 mg, Vitamina B5: 19,17 mg, Vitamina B6: 2,52 mg, Vitamina B9: 0,41 mg, Vitamina B12: 53,46 mcg, Vitamina H: 0,22 mg, Vitamina C: 27 mg, Fosfatidilcolina: 6,51 mg, Ferro: 63,36 mg, Cobre: 7,92 mg, Zinco: 97,56 mg, Manganês: 6,03 mg, Selênio: 0,34 mg, Iodo: 1,08 mg. *Valores por kg do produto, expressos em mínimos."
-        }
-      },
-      {
         "slug": "caes-adultos-porte-medio-grande",
         "title": "Cães Adultos",
         "porte": "Porte Médio e Grande",
@@ -144,7 +116,25 @@
         "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/2.avif",
-        "disp": "Disponível em embalagens de"
+        "disp": "Disponível em embalagens de",
+        "benefits": [
+          "/produtos/beneficios/protecao-cardiovascular.svg",
+          "/produtos/beneficios/proteinas-selecionadas.svg",
+          "/produtos/beneficios/pele-pelagem.svg",
+          "/produtos/beneficios/complexo-imunologico.svg",
+          "/produtos/beneficios/fezes-firmes.svg",
+          "/produtos/beneficios/saude-oral.svg",
+          "/produtos/beneficios/saude-intestinal.svg",
+          "/produtos/beneficios/tamanho-formato.svg",
+          "/produtos/beneficios/sabor-irresistivel.svg",
+          "/produtos/beneficios/reforco-articular.svg",
+          "/produtos/beneficios/antioxidantes-naturais.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, grão de arroz, grão de milho*, farelo de arroz, farinha de carne e ossos de bovino, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (1%), óleo de aves, óleo de peixes, sulfato de glicosamina, sulfato de condroitina, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, lisina, l-carnitina, taurina, hexametafosfato de sódio (0,1%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,05%), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100 g/kg; proteína bruta (mín.) 230 g/kg; extrato etéreo (mín.) 110 g/kg; matéria fibrosa (máx.) 30 g/kg; matéria mineral (máx.) 90 g/kg; cálcio (mín.) 10 g/kg; cálcio (máx.) 18 g/kg; fósforo (mín.) 8.000 mg/kg; sódio (mín.) 1.200 mg/kg; potássio (mín.) 5.800 mg/kg. Aminoácidos: Lisina (mín.) 9.000 mg/kg; metionina (mín.) 4.600 mg/kg. Ácidos graxos essenciais: Ômega 6 (mín.) 22 g/kg; Ômega 3 (mín.) 2.200 mg/kg; EPA + DHA (mín.) 700 mg/kg. Nutrientes funcionais: Carnitina (mín.) 200 mg/kg; taurina (mín.) 1.200 mg/kg; sulfato de condroitina (mín.) 50 mg/kg; sulfato de glicosamina (mín.) 600 mg/kg; mananoligossacarídeos (mín.) 130 mg/kg; beta-glucanas (mín.) 240 mg/kg. Vitaminas e minerais: Vitamina E (mín.) 113 UI/kg; Vitamina C (mín.) 30 mg/kg; selênio orgânico (mín.) 0,11 mg/kg; zinco orgânico (mín.) 32 mg/kg. Energia metabolizável (mín.) 3.750 kcal/kg.",
+          "enrichment": "Vitamina A: 11.809 UI, Vitamina D3: 922 UI, Vitamina E: 113 UI, Vitamina K3: 1,1 mg, Vitamina B1: 3,8 mg, Vitamina B2: 9,8 mg, Vitamina B3: 26,1 mg, Vitamina B5: 21,3 mg, Vitamina B6: 2,8 mg, Vitamina B9: 0,46 mg, Vitamina B12: 59,4 mcg, Vitamina H: 0,25 mg, Vitamina C: 30 mg, Fosfatidilcolina: 7,23 mg, Ferro: 70,4 mg, Cobre: 8,8 mg, Zinco: 108 mg, Manganês: 6,7 mg, Selênio: 0,38 mg, Iodo: 1,2 mg. *Valores por kg do produto, expressos em mínimos."
+        }
       },
       {
         "slug": "caes-adultos-todos-portes",
@@ -154,7 +144,22 @@
         "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/3.avif",
-        "disp": "Disponível em embalagens de"
+        "disp": "Disponível em embalagens de",
+        "benefits": [
+          "/produtos/beneficios/sabor-irresistivel.svg",
+          "/produtos/beneficios/fezes-firmes.svg",
+          "/produtos/beneficios/antioxidantes-naturais.svg",
+          "/produtos/beneficios/pele-pelagem.svg",
+          "/produtos/beneficios/saude-oral.svg",
+          "/produtos/beneficios/complexo-imunologico.svg",
+          "/produtos/beneficios/saude-intestinal.svg",
+          "/produtos/beneficios/proteinas-selecionadas.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, farinha de carne e ossos de bovino, grão de arroz, grão de milho*, farelo de arroz, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (0,5%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sódio (0,09%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,04%), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100,00 g; proteína bruta (mín.) 220,00 g; extrato etéreo (mín.) 90,00 g; matéria fibrosa (máx.) 35,00 g; matéria mineral (máx.) 95,00 g; cálcio (mín.) 10,00 g; cálcio (máx.) 18,00 g; fósforo (mín.) 8.000,00 mg; sódio (mín.) 1.200,00 mg; potássio (mín.) 5.800,00 mg. Aminoácidos: Lisina (mín.) 9.000,00 mg; metionina (mín.) 4.600,00 mg. Ácidos graxos essenciais: Ômega 6 (mín.) 21,00 g; Ômega 3 (mín.) 1.000,00 mg. Ingredientes e nutrientes funcionais: Carnitina (mín.) 90,00 mg; mananoligossacarídeos (mín.) 130,00 mg; beta-glucanas (mín.) 240,00 mg; Vitamina E (mín.) 102,00 UI; Vitamina C (mín.) 27,00 mg; selênio orgânico (mín.) 0,10 mg; zinco orgânico (mín.) 29,00 mg. Energia metabolizável (mín.) 3.610,00 kcal.",
+          "enrichment": "Vitamina A: 10.628 UI, Vitamina D3: 829 UI, Vitamina E: 102 UI, Vitamina K3: 1,03 mg, Vitamina B1: 3,42 mg, Vitamina B2: 8,82 mg, Vitamina B3: 23,49 mg, Vitamina B5: 19,17 mg, Vitamina B6: 2,52 mg, Vitamina B9: 0,41 mg, Vitamina B12: 53,46 mcg, Vitamina H: 0,22 mg, Vitamina C: 27 mg, Fosfatidilcolina: 6,51 mg, Ferro: 63,36 mg, Cobre: 7,92 mg, Zinco: 97,56 mg, Manganês: 6,03 mg, Selênio: 0,34 mg, Iodo: 1,08 mg. *Valores por kg do produto, expressos em mínimos."
+        }
       },
       {
         "slug": "caes-filhotes-todos-portes",
@@ -164,7 +169,24 @@
         "weights": "15kg",
         "sabor": "Sabor",
         "image": "/produtos/4.avif",
-        "disp": "Disponível em embalagens de"
+        "disp": "Disponível em embalagens de",
+        "benefits": [
+          "/produtos/beneficios/desenvolvimento-cerebral.svg",
+          "/produtos/beneficios/antioxidantes-naturais.svg",
+          "/produtos/beneficios/complexo-imunologico.svg",
+          "/produtos/beneficios/fezes-firmes.svg",
+          "/produtos/beneficios/proteinas-selecionadas.svg",
+          "/produtos/beneficios/saude-oral.svg",
+          "/produtos/beneficios/pele-pelagem.svg",
+          "/produtos/beneficios/paladares-exigentes.svg",
+          "/produtos/beneficios/crescimento-saudavel.svg",
+          "/produtos/beneficios/saude-intestinal.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, grão de arroz, grão de milho*, farelo de arroz, farinha de carne e ossos de bovino, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (1%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sódio (0,1%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,05%), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100,00 g; proteína bruta (mín.) 270,00 g; extrato etéreo (mín.) 120,00 g; matéria fibrosa (máx.) 30,00 g; matéria mineral (máx.) 85,00 g; cálcio (mín.) 10,00 g; cálcio (máx.) 16,00 g; fósforo (mín.) 9.000,00 mg; sódio (mín.) 2.200,00 mg; potássio (mín.) 5.800,00 mg. Aminoácidos: Lisina (mín.) 10,00 g; metionina (mín.) 4.600,00 mg. Ácidos graxos essenciais: Ômega 6 (mín.) 25,00 g; Ômega 3 (mín.) 2.200,00 mg; EPA + DHA (mín.) 700,00 mg. Ingredientes e nutrientes funcionais: Carnitina (mín.) 100,00 mg; mananoligossacarídeos (mín.) 195,00 mg; beta-glucanas (mín.) 360,00 mg; Vitamina E (mín.) 142,00 UI; Vitamina C (mín.) 37,00 mg; selênio orgânico (mín.) 0,14 mg; zinco orgânico (mín.) 40,00 mg. Energia metabolizável (mín.) 3.820,00 kcal.",
+          "enrichment": "Vitamina A: 14.761 UI, Vitamina D3: 1.152 UI, Vitamina E: 142 UI, Vitamina K3: 1,43 mg, Vitamina B1: 4,7 mg, Vitamina B2: 12,2 mg, Vitamina B3: 32,6 mg, Vitamina B5: 26,6 mg, Vitamina B6: 3,5 mg, Vitamina B9: 0,57 mg, Vitamina B12: 74,2 mcg, Vitamina H: 0,31 mg, Vitamina C: 37 mg, Fosfatidilcolina: 9 mg, Ferro: 88 mg, Cobre: 11 mg, Zinco: 135 mg, Manganês: 8,3 mg, Selênio: 0,47 mg, Iodo: 1,5 mg. *Valores por kg do produto, expressos em mínimos."
+        }
       },
       {
         "slug": "gatos-adultos",
@@ -173,8 +195,26 @@
         "flavor": "Frango e Arroz",
         "weights": "10,1kg",
         "sabor": "Sabor",
-        "image": " /produtos/5.avif",
-        "disp": "Disponível em embalagens de"
+        "image": "/produtos/5.avif",
+        "disp": "Disponível em embalagens de",
+        "benefits": [
+          "/produtos/beneficios/epa-dha-taurina.svg",
+          "/produtos/beneficios/paladares-exigentes.svg",
+          "/produtos/beneficios/pele-pelagem.svg",
+          "/produtos/beneficios/antioxidantes-naturais.svg",
+          "/produtos/beneficios/proteinas-selecionadas.svg",
+          "/produtos/beneficios/ambientes-internos.svg",
+          "/produtos/beneficios/saude-oral.svg",
+          "/produtos/beneficios/trato-urinario.svg",
+          "/produtos/beneficios/saude-intestinal.svg",
+          "/produtos/beneficios/complexo-imunologico.svg",
+          "/produtos/beneficios/tamanho-formato.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, grão de arroz, grão de milho*, farinha de torresmo, farelo de glúten de milho 60*, farelo de arroz, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (2%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, taurina, hexametafosfato de sódio (0,1%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,05%), aditivo regulador de acidez (ácido cítrico, metionina, cloreto de amônio, sulfato de amônio, óleo de girassol refinado, cloreto de sódio), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100 g/kg; proteína bruta (mín.) 335 g/kg; extrato etéreo (mín.) 120 g/kg; matéria fibrosa (máx.) 35 g/kg; matéria mineral (máx.) 85 g/kg; cálcio (mín.) 9.000 mg/kg; cálcio (máx.) 16 g/kg; fósforo (mín.) 7.000 mg/kg; sódio (mín.) 2.000 mg/kg; potássio (mín.) 8.000 mg/kg. Aminoácidos: Lisina (mín.) 10 g/kg; metionina (mín.) 6.000 mg/kg. Ácidos graxos essenciais: Ômega 6 (mín.) 18 g/kg; Ômega 3 (mín.) 1.800 mg/kg; EPA + DHA (mín.) 170 mg/kg. Nutrientes funcionais: Carnitina (mín.) 200 mg/kg; taurina (mín.) 1.300 mg/kg; mananoligossacarídeos (mín.) 130,00 mg; beta-glucanas (mín.) 240,00 mg; Vitamina E (mín.) 138 UI; Vitamina C (mín.) 50 mg; selênio orgânico (mín.) 0,10 mg; zinco orgânico (mín.) 39 mg. Energia metabolizável (mín.) 3.860,00 kcal.",
+          "enrichment": "Vitamina A: 12.112 UI, Vitamina D3: 480 UI, Vitamina E: 138 UI, Vitamina K3: 1,15 mg, Vitamina B1: 9 mg, Vitamina B2: 6 mg, Vitamina B3: 58,2 mg, Vitamina B5: 10 mg, Vitamina B6: 5,5 mg, Vitamina B9: 1,55 mg, Vitamina B12: 36 mcg, Vitamina H: 0,2 mg, Vitamina C: 50 mg, Fosfatidilcolina: 14,46 mg, Ferro: 74,9 mg, Cobre: 8 mg, Zinco: 130 mg, Manganês: 8 mg, Selênio: 0,34 mg, Iodo: 1,7 mg. *Valores por kg do produto, expressos em mínimos."
+        }
       },
       {
         "slug": "gatos-castrados",
@@ -182,9 +222,28 @@
         "porte": "",
         "flavor": "Frango e Arroz",
         "weights": "2,5kg e 10,1kg",
-        "image": " /produtos/6.avif",
+        "image": "/produtos/6.avif",
         "sabor": "Sabor",
-        "disp": "Disponível em embalagens de"
+        "disp": "Disponível em embalagens de",
+        "benefits": [
+          "/produtos/beneficios/epa-dha-taurina.svg",
+          "/produtos/beneficios/paladares-exigentes.svg",
+          "/produtos/beneficios/pele-pelagem.svg",
+          "/produtos/beneficios/antioxidantes-naturais.svg",
+          "/produtos/beneficios/proteinas-selecionadas.svg",
+          "/produtos/beneficios/ambientes-internos.svg",
+          "/produtos/beneficios/saude-oral.svg",
+          "/produtos/beneficios/trato-urinario.svg",
+          "/produtos/beneficios/saude-intestinal.svg",
+          "/produtos/beneficios/complexo-imunologico.svg",
+          "/produtos/beneficios/controle-peso.svg",
+          "/produtos/beneficios/tamanho-formato.svg"
+        ],
+        "specs": {
+          "composition": "Farinha de vísceras de aves, grão de arroz, grão de milho*, farinha de torresmo, farelo de glúten de milho 60*, farelo de arroz, farelo de soja **, levedura de cervejaria inativada desidratada, polpa desidratada de beterraba (2%), óleo de aves, óleo de peixes, cloreto de sódio, cloreto de potássio, hidrolisado de fígado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerais (sulfato de ferro, sulfato de cobre, sulfato de zinco, sulfato de manganês, selenito de sódio, iodato de cálcio, complexo ferro aminoácido, complexo cobre aminoácido, complexo zinco aminoácido, complexo manganês aminoácido, proteinato de selênio), dl-metionina, l-lisina, l-carnitina, taurina, hexametafosfato de sódio (0,1%), parede celular de levedura (aditivo prebiótico), zeólita (0,75%), extrato de yucca (0,05%), aditivo regulador de acidez (ácido cítrico, metionina, cloreto de amônio, sulfato de amônio, óleo de girassol refinado, cloreto de sódio), ácido propiônico, BHA e BHT.",
+          "guarantee": "Umidade (máx.) 100 g/kg; proteína bruta (mín.) 365 g/kg; extrato etéreo (mín.) 105 g/kg; matéria fibrosa (máx.) 40 g/kg; matéria mineral (máx.) 80 g/kg; cálcio (mín.) 9.000 mg/kg; cálcio (máx.) 16 g/kg; fósforo (mín.) 7.000 mg/kg; sódio (mín.) 2.000 mg/kg; potássio (mín.) 8.800 mg/kg. Aminoácidos: Lisina (mín.) 10 g/kg; metionina (mín.) 6.000 mg/kg. Ácidos graxos essenciais: Ômega 6 (mín.) 18 g/kg; Ômega 3 (mín.) 1.800 mg/kg; EPA + DHA (mín.) 380 mg/kg. Nutrientes funcionais: Carnitina (mín.) 200 mg/kg; taurina (mín.) 1.300 mg/kg; mananoligossacarídeos (mín.) 130,00 mg; beta-glucanas (mín.) 240,00 mg; Vitamina E (mín.) 138 UI; Vitamina C (mín.) 50 mg; selênio orgânico (mín.) 0,10 mg; zinco orgânico (mín.) 39 mg. Energia metabolizável (mín.) 3.793,00 kcal.",
+          "enrichment": "Vitamina A: 12.112 UI, Vitamina D3: 480 UI, Vitamina E: 138 UI, Vitamina K3: 1,15 mg, Vitamina B1: 9 mg, Vitamina B2: 6 mg, Vitamina B3: 58,2 mg, Vitamina B5: 10 mg, Vitamina B6: 5,5 mg, Vitamina B9: 1,55 mg, Vitamina B12: 36 mcg, Vitamina H: 0,2 mg, Vitamina C: 50 mg, Fosfatidilcolina: 14,46 mg, Ferro: 74,9 mg, Cobre: 8 mg, Zinco: 130 mg, Manganês: 8 mg, Selênio: 0,34 mg, Iodo: 1,7 mg. *Valores por kg do produto, expressos em mínimos."
+        }
       }
     ]
   },

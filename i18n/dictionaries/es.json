@@ -137,33 +137,6 @@
     "cta": "Saber mas",
     "items": [
       {
-        "slug": "caes-adultos-porte-pequeno",
-        "title": "Perros adultos",
-        "porte": "Tamano pequeno",
-        "flavor": "Pollo y arroz",
-        "weights": "2,5 kg y 15 kg",
-        "sabor": "Sabor",
-        "image": "/produtos/1.avif",
-        "disp": "Disponible en envases de",
-        "image1": "/produtos/1.1.avif",
-        "icons": [
-          "/produtos/icones/proteinas.svg",
-          "/produtos/icones/paladares.svg",
-          "/produtos/icones/ambientes.svg",
-          "/produtos/icones/complexo.svg",
-          "/produtos/icones/antioxidantes.svg",
-          "/produtos/icones/oral.svg",
-          "/produtos/icones/formato.svg",
-          "/produtos/icones/pele.svg",
-          "/produtos/icones/intestino.svg"
-        ],
-        "specs": {
-          "composition": "Harina de visceras de aves, harina de carne y huesos de bovino, grano de arroz, grano de maiz, salvado de arroz, harina de soja, levadura de cerveza inactivada deshidratada, pulpa de remolacha deshidratada (0,5%), aceite de aves, aceite de pescados, cloruro de sodio, cloruro de potasio, hidrolizado de higado de aves, vitaminas (vitamina A, vitamina D3, vitamina E, vitamina K3, vitamina B1, vitamina B2, vitamina B3, vitamina B5, vitamina B6, vitamina B9, vitamina B12, vitamina C, vitamina H, fosfatidilcolina), minerales (sulfato de hierro, sulfato de cobre, sulfato de zinc, sulfato de manganeso, selenito de sodio, yodato de calcio, complejo hierro aminoacido, complejo cobre aminoacido, complejo zinc aminoacido, complejo manganeso aminoacido, proteinato de selenio), dl-metionina, l-lisina, l-carnitina, hexametafosfato de sodio (0,09%), pared celular de levadura (aditivo prebiotico), zeolita (0,75%), extracto de yucca (0,04%), acido propionico, BHA y BHT.",
-          "guarantee": "Humedad (max.) 100,00 g; proteina bruta (min.) 220,00 g; extracto etereo (min.) 90,00 g; materia fibrosa (max.) 35,00 g; materia mineral (max.) 95,00 g; calcio (min.) 10,00 g; calcio (max.) 18,00 g; fosforo (min.) 8.000,00 mg; sodio (min.) 1.200,00 mg; potasio (min.) 5.800,00 mg. Aminoacidos: lisina (min.) 9.000,00 mg; metionina (min.) 4.600,00 mg. Acidos grasos esenciales: omega 6 (min.) 21,00 g; omega 3 (min.) 1.000,00 mg. Ingredientes y nutrientes funcionales: carnitina (min.) 90,00 mg; mananoligosacaridos (min.) 130,00 mg; beta-glucanos (min.) 240,00 mg; vitamina E (min.) 102,00 UI; vitamina C (min.) 27,00 mg; selenio organico (min.) 0,10 mg; zinc organico (min.) 29,00 mg. Energia metabolizable (min.) 3.610,00 kcal.",
-          "enrichment": "Vitamina A: 10.628 UI, vitamina D3: 829 UI, vitamina E: 102 UI, vitamina K3: 1,03 mg, vitamina B1: 3,42 mg, vitamina B2: 8,82 mg, vitamina B3: 23,49 mg, vitamina B5: 19,17 mg, vitamina B6: 2,52 mg, vitamina B9: 0,41 mg, vitamina B12: 53,46 mcg, vitamina H: 0,22 mg, vitamina C: 27 mg, fosfatidilcolina: 6,51 mg, hierro: 63,36 mg, cobre: 7,92 mg, zinc: 97,56 mg, manganeso: 6,03 mg, selenio: 0,34 mg, yodo: 1,08 mg. Valores por kg del producto, expresados en minimos."
-        }
-      },
-      {
         "slug": "caes-adultos-porte-medio-grande",
         "title": "Perros adultos",
         "porte": "Tamano mediano y grande",

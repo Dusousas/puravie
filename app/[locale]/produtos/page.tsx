@@ -19,9 +19,7 @@ export default async function ProdutosPage({
 
   const dict = await getDictionary(locale);
 
-  const items = (dict.products?.items ?? []).filter(
-    (item: { slug?: string }) => item.slug !== "caes-adultos-porte-pequeno",
-  );
+  const items = dict.products?.items ?? [];
 
   return (
     <>
