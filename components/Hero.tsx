@@ -10,6 +10,11 @@ type HeroProps = {
 };
 
 export default function Hero({ locale, dict }: HeroProps) {
+  const heroImage = {
+    pt: "/hero1_br.avif",
+    en: "/hero1_us.avif",
+    es: "/hero1_es.avif",
+  }[locale];
   const rootRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const subtitleRef = useRef<HTMLParagraphElement>(null);
@@ -51,7 +56,7 @@ export default function Hero({ locale, dict }: HeroProps) {
   }, []);
 
   return (
-    <section className="bgHero1 relative mt-20">
+    <section className="bgHero1 relative mt-20" style={{ backgroundImage: `url(${heroImage})` }}>
       <div
         ref={rootRef}
         className="maxW min-h-[80vh] flex flex-col justify-center items-start"

@@ -43,7 +43,6 @@ overflow-x: hidden;
 }
 
 .bgHero1 {
-  background-image: url("/hero1_br.avif");
   background-size: cover;
   height: 100vh;
   background-position: bottom;
