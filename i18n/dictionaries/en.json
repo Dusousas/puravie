@@ -8,8 +8,11 @@
   },
   "nav": {
     "home": "Home",
+    "products": "Products",
     "about": "About",
-    "contact": "Contact"
+    "program": "Satisfaction Program",
+    "contact": "Contact",
+    "adocao": "Puravie Blog"
   },
   "hero": {
     "title": "The best food for your dog",
@@ -34,9 +37,30 @@
     "primaryButton": "Learn more"
   },
   "about": {
-    "title": "About us",
+    "title": "Our brand is a warm hug in every kibble!",
     "p": "Our brand is a warm hug in every kibble!",
-    "primaryButton": "Read more"
+    "primaryButton": "Read more",
+    "description": "Filling the bowl is a ritual full of happiness, joy and fun. This moment is so pure for our four-legged companions that they deserve food that lives up to it. That is why Puravie was born: a new brand, a new purpose and a new approach to pet nutrition. Every ingredient carries a promise of deep care, and our commitment to society reflects our love for the planet. With Puravie, every meal is an act of love.",
+    "mission": {
+      "title": "Our mission",
+      "description": "To nurture deep, meaningful relationships with pets and their families, making a difference through quality food and a commitment to society."
+    },
+    "commitment": {
+      "title": "Social commitment",
+      "description": "When you choose Puravie, you join us on a journey of responsibility and love. Part of every sale supports animal welfare initiatives and social projects. Every serving is a chance to spread love and make a difference."
+    },
+    "values": {
+      "title": "Our values",
+      "list": ["Commitment", "Respect", "Care", "Authenticity", "Empathy", "Transparency"]
+    },
+    "packaging": {
+      "title": "Our packaging is sustainable",
+      "description1": "Our packaging is 100% recyclable and reflects our commitment to the environment.",
+      "description2": "We have chosen recyclable materials that can go to separate collection instead of sophisticated zippers or special seals.",
+      "description3": "We also use color thoughtfully to reduce environmental impact. In partnership with the EU RECICLO certification, we offset every package produced by supporting recycling cooperatives.",
+      "description4": "When you choose PURAVIE, you also support a community dedicated to caring for our planet.",
+      "description5": "Join us in this mission!"
+    }
   },
   "program": {
     "title": "Satisfaction Program",
@@ -48,7 +72,7 @@
       "Keep at least 75% of the product in the original package, following the instructions on the packaging",
       "Product within the expiration date printed on the package"
     ],
-    "badgeSrc": "/110_br.svg",
+    "badgeSrc": "/110_en.svg",
     "primaryButton": "Read more"
   },
   "contact": {
@@ -97,6 +121,7 @@
   "footer": {
     "title": "© 2026 PURAVIE. A NOU Pet Care brand.",
     "title2": "Developed by",
+    "socialText": "Follow us, connect and join the community",
     "subtitle": "Want to know how to purchase Puravie products? Contact our sales team to find the ideal food for your pet. We’re ready to help! Visit our contact page and talk to us.",
     "primaryButton": "Buy"
   },

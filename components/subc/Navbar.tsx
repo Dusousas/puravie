@@ -167,7 +167,7 @@ export default function Navbar({ locale, dict }: NavbarProps) {
 
         {/* Bandeiras no Mobile */}
         <div className="px-6 py-4 border-b border-white/15">
-          <p className="text-white/90 text-xs uppercase font-semibold tracking-wide">Idioma</p>
+          <p className="text-white/90 text-xs uppercase font-semibold tracking-wide">{{ pt: "Idioma", en: "Language", es: "Idioma" }[locale]}</p>
 
           <div className="mt-3 flex items-center gap-3">
             <Link href={`/pt${suffix}`} onClick={() => setOpen(false)}>

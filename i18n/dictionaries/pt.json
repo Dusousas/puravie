@@ -8,8 +8,11 @@
   },
   "nav": {
     "home": "Início",
+    "products": "Produtos",
     "about": "Sobre",
-    "contact": "Contato"
+    "program": "Programa de Satisfação",
+    "contact": "Contato",
+    "adocao": "Blog Puravie"
   },
   "hero": {
     "title": "O melhor alimento para o seu cachorro",
@@ -98,6 +101,7 @@
   "footer": {
     "title": "© 2026 PURAVIE. Uma marca NOU Pet Care.",
     "title2": "Desenvolvido por",
+    "socialText": "Siga-nos, interaja e participe da comunidade",
 
     "subtitle": "Quer saber como adquirir os produtos Puravie? Entre em contato com o nosso time de vendas para encontrar o alimento ideal para o seu pet. Estamos prontos para ajudar!  Acesse nossa página de contato e fale conosco.",
     "primaryButton": "Comprar"

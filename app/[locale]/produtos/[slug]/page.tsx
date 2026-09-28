@@ -5,6 +5,7 @@ import {
   type Locale,
 } from "@/i18n/config";
 import { getDictionary } from "@/lib/getDictionary";
+import { benefitImage, benefitLabel, productLabels, translateSpecs } from "@/lib/productTranslations";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import ProductSpecsTabs from "./ProductSpecsTabs";
@@ -23,27 +24,6 @@ const kibbleImages: Record<string, string> = {
   "caes-filhotes-todos-portes": "/produtos/graos/todos-portes.avif",
   "gatos-adultos": "/produtos/graos/gatos-adultos.avif",
   "gatos-castrados": "/produtos/graos/todos-portes.avif",
-};
-
-const benefitLabels: Record<string, string> = {
-  "protecao-cardiovascular.svg": "Proteção cardiovascular",
-  "proteinas-selecionadas.svg": "Proteínas selecionadas",
-  "pele-pelagem.svg": "Pele saudável e pelagem brilhante",
-  "complexo-imunologico.svg": "Complexo imunológico",
-  "fezes-firmes.svg": "Fezes mais firmes e com menos cheiro",
-  "saude-oral.svg": "Saúde oral",
-  "saude-intestinal.svg": "Saúde intestinal",
-  "tamanho-formato.svg": "Tamanho e formato ideais",
-  "sabor-irresistivel.svg": "Sabor irresistível",
-  "reforco-articular.svg": "Reforço articular",
-  "antioxidantes-naturais.svg": "Com antioxidantes naturais",
-  "desenvolvimento-cerebral.svg": "Apoio ao desenvolvimento cerebral",
-  "crescimento-saudavel.svg": "Crescimento saudável",
-  "paladares-exigentes.svg": "Paladares exigentes",
-  "epa-dha-taurina.svg": "Com EPA, DHA e taurina",
-  "ambientes-internos.svg": "Ambientes internos",
-  "trato-urinario.svg": "Trato urinário saudável",
-  "controle-peso.svg": "Controle de peso",
 };
 
 export async function generateStaticParams() {
@@ -70,6 +50,7 @@ export default async function ProdutoDetalhePage({
 
   const dict = await getDictionary(locale);
   const items = dict.products?.items ?? [];
+  const ptDict = locale === "pt" ? dict : await getDictionary("pt");
   const backLabel = {
     pt: "Voltar para produtos",
     en: "Back to products",
@@ -78,6 +59,13 @@ export default async function ProdutoDetalhePage({
 
   const product = items.find((p: { slug: string }) => p.slug === slug);
   if (!product) return notFound();
+  const sourceProduct = ptDict.products.items.find((p: { slug: string }) => p.slug === slug);
+  const benefits: string[] = product.benefits ?? sourceProduct?.benefits ?? [];
+  const specs = product.specs ?? (sourceProduct?.specs && translateSpecs(sourceProduct.specs, locale));
+  const labels = productLabels[locale];
+  const titleParts = locale === "en" ? product.title.split(" — ") : [product.title];
+  const title = titleParts[0];
+  const porte = product.porte ?? titleParts[1];
   const kibbleImage = kibbleImages[slug];
 
   return (
@@ -96,13 +84,13 @@ export default async function ProdutoDetalhePage({
             <div className="relative">
               <img
                 src={product.image}
-                alt={product.title}
+                alt={title}
                 className="max-w-[450px]"
               />
 
               <img
                 className="absolute top-0 right-0 w-[180px]"
-                src="/produtos/100.svg"
+                src={locale === "pt" ? "/produtos/100.svg" : `/produtos/100_${locale}.svg`}
                 alt=""
               />
             </div>
@@ -121,43 +109,43 @@ export default async function ProdutoDetalhePage({
                         : "w-20"
                     }
                     src={kibbleImage}
-                    alt="Formato do grão da ração"
+                    alt={labels.kibble}
                   />
                 </div>
               )}
 
               <h1 className="text-5xl font-semibold uppercase text-white">
-                {product.title}
+                {title}
               </h1>
 
-              {product.porte && (
+              {porte && (
                 <h3 className="text-xl uppercase text-white">
-                  {product.porte}
+                  {porte}
                 </h3>
               )}
 
               <h3 className="mt-6 text-xl font-semibold uppercase text-white">
-                {product.sabor}:
+                {product.sabor ?? labels.flavor}:
               </h3>
 
               <p className="text-white">{product.flavor}</p>
 
               <p className="mt-6 font-semibold uppercase text-white">
-                {product.disp}:
+                {product.disp ?? labels.packaging}:
               </p>
 
               <p className="text-sm text-white">{product.weights}</p>
               </div>
               <div className="mt-6 flex flex-wrap items-start justify-center gap-4 sm:justify-start">
                 <img
-                  src="/110_br.svg"
-                  alt="Satisfação de 110% ou seu dinheiro de volta"
+                  src={locale === "pt" ? "/110_br.svg" : `/110_${locale}.svg`}
+                  alt={labels.guarantee}
                   className="h-28 w-28 shrink-0 object-contain"
                 />
                 <img
-                  src="/produtos/icons.svg"
-                  alt="Desenvolvido por especialistas; livre de corantes e aromatizantes artificiais"
-                  className="h-28 w-full min-w-[280px] max-w-[500px] flex-1 object-cover object-top"
+                  src={locale === "pt" ? "/produtos/icons.svg" : `/produtos/icons_${locale}.svg`}
+                  alt={`${labels.experts}; ${labels.natural}`}
+                  className="h-28 w-full min-w-[280px] max-w-[500px] flex-1 object-contain object-left"
                 />
               </div>
             </div>
@@ -165,7 +153,7 @@ export default async function ProdutoDetalhePage({
         </div>
       </section>
 
-      {product.benefits && (
+      {benefits.length > 0 && (
         <section
           className={`py-20 ${
             slug.startsWith("gatos-") ? "bg-[#071d73]" : "bg-vermelhop"
@@ -173,15 +161,15 @@ export default async function ProdutoDetalhePage({
         >
           <div className="maxW">
             <div className="flex flex-wrap justify-center gap-x-4 gap-y-6">
-              {product.benefits.map((benefit: string) => (
+              {benefits.map((benefit: string) => (
                 <img
                   key={benefit}
-                  src={benefit}
-                  alt={benefitLabels[benefit.split("/").pop() ?? ""] ?? ""}
+                  src={benefitImage(benefit, locale)}
+                  alt={benefitLabel(benefit, locale)}
                   className={`h-[210px] w-[calc(50%-0.5rem)] max-w-[200px] object-contain md:w-[calc(33.333%-0.75rem)] ${
-                    product.benefits.length === 8
+                    benefits.length === 8
                       ? "lg:w-[calc(25%-0.75rem)]"
-                      : product.benefits.length === 10
+                      : benefits.length === 10
                         ? "lg:w-[calc(20%-0.8rem)]"
                         : "lg:w-[calc(16.666%-0.9rem)]"
                   }`}
@@ -192,8 +180,8 @@ export default async function ProdutoDetalhePage({
         </section>
       )}
 
-      {product.specs && (
-        <ProductSpecsTabs specs={product.specs} locale={locale} />
+      {specs && (
+        <ProductSpecsTabs specs={specs} locale={locale} />
       )}
     </>
   );

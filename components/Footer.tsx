@@ -23,7 +23,7 @@ export default function Footer({ locale, dict }: FooterProps) {
           
           {/* Coluna 1: SAC */}
           <div className="flex flex-col gap-1">
-            <h4 className="font-bold text-sm uppercase tracking-wider">Atendimento ao Consumidor</h4>
+            <h4 className="font-bold text-sm uppercase tracking-wider">{{ pt: "Atendimento ao Consumidor", en: "Customer Service", es: "Atención al Cliente" }[locale]}</h4>
             <a href="mailto:sac@noupetcare.com" className="text-sm hover:underline">sac@noupetcare.com</a>
             <a href="https://wa.me/5519999448710" target="_blank" className="text-sm hover:underline">(19) 99944-8710</a>
           </div>

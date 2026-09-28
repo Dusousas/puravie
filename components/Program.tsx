@@ -94,7 +94,7 @@ export default function Program({ locale, dict }: ProgramProps) {
               <img
                 ref={badgeRef}
                 src={dict.program.badgeSrc}
-                alt="Selo 110% satisfação"
+                alt={{ pt: "Selo de 110% de satisfação", en: "110% satisfaction badge", es: "Sello de 110% de satisfacción" }[locale]}
                 className="w-full h-auto"
               />
             )}
