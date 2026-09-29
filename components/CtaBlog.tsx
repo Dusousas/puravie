@@ -45,14 +45,14 @@ export default function CtaBlog({ locale, dict }: CtaBlogProps) {
     <a href={`/${locale}/blog`} className="block">
       <section
         ref={sectionRef}
-        className="bgctabr py-12 border-t-2 border-white"
+        className="bgctabr border-t-2 border-white"
       >
-        <div className="maxW flex flex-col items-center gap-x-30 w-full lg:flex-row">
+        <div className="maxW flex flex-col items-center gap-x-30 w-full !py-12 lg:flex-row">
           <img ref={logoRef} src="/logo_blog.avif" alt="Blog PuraVie" />
 
           <h2
             ref={titleRef}
-            className="text-4xl max-w-[590px] font-bold text-center lg:text-left"
+            className="hidden text-4xl max-w-[590px] font-bold text-center lg:block lg:text-left"
           >
             {dict.blog?.title ?? "Blog Title"}
           </h2>

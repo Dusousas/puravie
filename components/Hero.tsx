@@ -1,12 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
 type HeroProps = {
   locale: "pt" | "en" | "es";
-  dict: any;
+  dict: {
+    hero?: {
+      title?: string;
+      subtitle?: string;
+      primaryButton?: string;
+    };
+  };
 };
 
 export default function Hero({ locale, dict }: HeroProps) {
@@ -56,10 +63,12 @@ export default function Hero({ locale, dict }: HeroProps) {
   }, []);
 
   return (
-    <section className="bgHero1 relative mt-20" style={{ backgroundImage: `url(${heroImage})` }}>
+    <section className="bgHero1 relative mt-20">
+      <div className="absolute inset-0 hidden bg-cover bg-bottom md:block" style={{ backgroundImage: `url(${heroImage})` }} aria-hidden="true" />
+      <Image src={heroImage} alt="" width={1905} height={1030} priority unoptimized className="block w-full h-auto md:hidden" />
       <div
         ref={rootRef}
-        className="maxW min-h-[80vh] flex flex-col justify-center items-start"
+        className="maxW relative flex flex-col justify-center items-center !py-10 md:min-h-[80vh] md:items-start md:!py-0"
       >
         <h1
           ref={titleRef}
